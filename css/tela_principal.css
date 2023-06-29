@@ -1,0 +1,25 @@
+body{
+    width: 365px;
+    height: 667px;
+    margin: 0;
+    border: solid 1px;
+}
+/*Demension: Responsive 369 x 670 */
+.cabecalho{
+    width: 100%;
+    font-size: 15px;
+    border: solid 1px;
+}
+p{
+    font-size: 20px;
+    padding: 0%;
+    font-weight: bold;
+}
+h1{
+    font-size: 8px;
+}
+.logo{
+    width: 100px;
+    position: absolute;
+    justify-content: left;
+}

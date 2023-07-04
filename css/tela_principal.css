@@ -1,6 +1,5 @@
 body{
-    width: 365px;
-    height: 667px;
+    padding: 0;
     margin: 0;
     border: solid 1px;
 }
@@ -9,6 +8,9 @@ body{
     width: 100%;
     font-size: 15px;
     border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
 }
 p{
     font-size: 20px;
@@ -18,8 +20,21 @@ p{
 h1{
     font-size: 8px;
 }
+.cabecalho2{
+    width: 90%;
+    font-size: 15px;
+    border: solid 1px;
+}
 .logo{
-    width: 100px;
-    position: absolute;
-    justify-content: left;
+    width: 130px;
+    height: 100px;
+    position: relative;
+    margin: 0;
+}
+.campo1{
+    display: block;
+    margin-bottom: 0.2em;
+}
+.idade{
+    width: 50px;
 }

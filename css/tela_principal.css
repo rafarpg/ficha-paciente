@@ -13,16 +13,29 @@ body{
     flex-direction: row;
     padding: 0;
     color: #ffff;
+    background-color: #CB997E;
 }
 p{
     font-size: 20px;
     padding: 0%;
     font-weight: bold;
     color: #ffff;
+    text-align: center
 }
 h1{
-    font-size: 8px;
+    font-size: 9px;
     color: #ffff;
+    text-align: center
+}
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    color: #ffff;
+    font-size: 20px;
 }
 .cabecalho2{
     width: 90%;
@@ -39,20 +52,55 @@ h1{
     display: block;
     margin-bottom: 0.2em;
     justify-content: space-between;
-    padding: 0.5em;
     color: #ffff;
 
 }
-.campo1 input[type="text"], .campo1 input[type="number"], .campo1 input[type="date"] {
+.campo1 input[type="text"], .campo1 input[type="number"], .campo1 input[type="date"], .campo2_2 input[type="text"] {
     border-radius: 0.3rem;
     border: 1px solid;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
     display: block;
-    font-size: 15px;
+    font-size: 12px;
+    margin-top: 10px;
 }
-.campo1 input[type="text"], .campo1 input[type="number"]{
+.campo1 input[type="text"]{
     width: 180px;
 }
-.idade{
-    width: 50px;
+.campo1 label{
+    font-size: 16px;
+}
+.campo2{
+    display: block;
+    margin-bottom: 0.2em;
+    justify-content: space-between;
+    padding: 0.5em;
+    padding-bottom: 0;
+    padding-top: 0.5em;
+    color: #ffff;
+    font-size: 15px;
+}
+.campo2 label{
+    font-size: 15px;
+    margin-right: 5px;
+}
+.campo2 input[type="text"], .campo2 input[type="checkbox"]{
+    border-radius: 0.3rem;
+    border: 1px solid;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+.campo2_2{
+    display: block;
+    margin-bottom: 0.2em;
+    justify-content: space-between;
+    padding: 0.5em;
+    color: #ffff;
+    
+}
+.campo2_2 input[type="text"], .campo1 input[type="number"]{
+    width: 200px;
+    margin-top: 10px;
+}
+#idade_paciente, #idade_acompanhante{
+    width: 30px;
 }

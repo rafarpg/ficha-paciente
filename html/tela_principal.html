@@ -8,97 +8,84 @@
     <link rel="stylesheet" type="text/css" href="../css/tela_principal.css">
 </head>
 <body>
+<header> Ficha de Ocorrência </header>
     <div class="cabecalho">
         <div class="cabecalho2">
         <p>Bombeiros Voluntários</p>
         <h1>Assoc. de Serviços Sociais Valountários de Guaramirim</h1>
         </div>
         <img src="../imagens/logo_bombeiros.png" class="logo"></div>
-        <form>
-            <table class="campo1">
+        <form action="registro.php" method="post">
+        <table class="campo1">
                 <tr>
-                <td><label>Data:</label></td>
-                <td><input type="date" id="data" name="data"></td>
+                    <td><label>Data:</label></td>
+                    <td><input type="date" id="data" name="data"></td>
+                </tr>
+                
+                <tr>
+                    <td><label>Nome:</label></td>
+                    <td><label><input type="text" id="nome" name="nome"></label></td>
                 </tr>
                 <tr>
-                <td><label>Nome:</label></td>
-                <td><label><input type="text" id="nome" name="nome"></label></td>
+                    <td><label>RG/CPF Paciente:</label></td>
+                    <td><input type="text" id="id_paciente" name="id_paciente"></td>
                 </tr>
-                <tr>
-                <td><label>RG/CPF Paciente:</label></td>
-                <td><input type="text" id="id_paciente" name="id_paciente"></td>
-                </tr>
-                <tr>
-                <td><label>Sexo do Paciente:</label></td>
-                    <td><label><input type="radio" id="seco" name="sexo" value="masculino">Masc</label>
-                        <label><input type="radio" id="seco" name="sexo" value="feminino">Fem</label></td>
-                </tr>
-                <tr>
-                    <td><label>Nome do Hospital:</label></td>
-                        <td><input type="text" id="hospital" name="hospital"></td>
-                <tr>
-                    <td><label>Acompanhante:</label></td>
-                    <td><input type="text" id="acompanhante" name="acompanhante"></td>
-                    </tr>
-                <tr>
-                    <td><label>Telefone do Paciente:</label></td>
-                        <td><input type="text" id="telefone" name="telefone"></td>
-                </tr>
-                <tr>
-                <td><label>Idade do Paciente:</label></td>
-                    <td><input type="number" id="idade_paciente" name="idade_paciente" class="idade"></td>
-                </tr>
-                <tr>
-                <td><label>Idade do Acompanhante:</label></td>
-                <td><input type="number" id="idade_acompanhante" name="idade_acompanhante" class="idade"></td>
-                </tr>
-                <tr>
-                <td><label>Local da Ocorrência:</label></td>
-                <td><input type="text" id="local_ocorrencia" name="local_ocorrencia"></td>
-            </tr>
-            </table>
-            <table class="campo1">
-                <tr>
-                <td><label>Data:</label></td>
-                <td><input type="date" id="data" name="data"></td>
-                </tr>
-                <tr>
-                <td><label>Nome:</label></td>
-                <td><label><input type="text" id="nome" name="nome"></label></td>
-                </tr>
-                <tr>
-                <td><label>RG/CPF Paciente:</label></td>
-                <td><input type="text" id="id_paciente" name="id_paciente"></td>
-                </tr>
-                <tr>
-                <td><label>Sexo do Paciente:</label></td>
-                    <td><label><input type="radio" id="seco" name="sexo" value="masculino">Masc</label>
-                        <label><input type="radio" id="seco" name="sexo" value="feminino">Fem</label></td>
+                <tr>    
+                    <td><label>Sexo do Paciente:</label></td>
+                    <td><label><input type="radio" id="sexo" name="sexo" value="masculino">Masculino</label>
+                    <label><input type="radio" id="sexo" name="sexo" value="feminino">Feminino</label></td>
                 </tr>
                 <tr>
                     <td><label>Nome do Hospital:</label></td>
-                        <td><input type="text" id="hospital" name="hospital"></td>
+                    <td><input type="text" id="hospital" name="hospital"></td>
                 <tr>
                     <td><label>Acompanhante:</label></td>
                     <td><input type="text" id="acompanhante" name="acompanhante"></td>
-                    </tr>
-                <tr>
-                    <td><label>Telefone do Paciente:</label></td>
-                        <td><input type="text" id="telefone" name="telefone"></td>
                 </tr>
                 <tr>
-                <td><label>Idade do Paciente:</label></td>
+                    <td><label>Telefone do Paciente:</label></td>
+                    <td><input type="text" id="telefone" name="telefone"></td>
+                </tr>
+                <tr>
+                    <td><label>Idade do Paciente:</label></td>
                     <td><input type="number" id="idade_paciente" name="idade_paciente" class="idade"></td>
                 </tr>
                 <tr>
-                <td><label>Idade do Acompanhante:</label></td>
-                <td><input type="number" id="idade_acompanhante" name="idade_acompanhante" class="idade"></td>
+                    <td><label>Idade do Acompanhante:</label></td>
+                    <td><input type="number" id="idade_acompanhante" name="idade_acompanhante" class="idade"></td>
                 </tr>
                 <tr>
-                <td><label>Local da Ocorrência:</label></td>
-                <td><input type="text" id="local_ocorrencia" name="local_ocorrencia"></td>
+                    <td><label>Local da Ocorrência:</label></td>
+                    <td><input type="text" id="local_ocorrencia" name="local_ocorrencia"></td>
+            </tr>
+        </table>
+        <hr>
+        <table class="campo2">
+            <tr>
+                <td><label>N° USB:</label></td>
+                <td><input type="text" id="num_usb" name="num_usb"><label for="cod_ir">CÓD. IR</label><input type="checkbox" name="cod_ir" id="cod_ir"></td>
+            </tr>
+            
+             <tr>
+                <td><label>N° Ocorr:</label></td>
+                <td><input type="text" id="num_ocorr" name="num_ocorr"><label for="cod_ps">CÓD. PS</label><input type="checkbox" name="cod_ps" id="cod_ps"></td>
             </tr>
             </table>
+            <table class="campo2_2">
+            <tr>
+                <td><label>Desp:</label></td>
+                <td><input type="text" id="desp" name="desp"></td>
+            </tr>
+            <tr>
+                <td><label>KM Final:</label></td>
+                <td><input type="text" id="km_final" name="km_final"></td>
+             </tr>
+             <tr>
+                <td><label>CÓD. SIA/SUS:</label></td>
+                <td><input type="text" id="cod_sia_sus" name="cod_sia_sus"></td>
+            </tr>
+        </table>
+        <input type="submit" id="enviar" name="enviar" value="Enviar">
         </form>
 </body>
 </html>

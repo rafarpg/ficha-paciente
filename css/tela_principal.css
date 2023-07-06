@@ -37,6 +37,16 @@ header{
     color: #ffff;
     font-size: 20px;
 }
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    color: #ffff;
+    font-size: 20px;
+}
 .cabecalho2{
     width: 90%;
     font-size: 15px;

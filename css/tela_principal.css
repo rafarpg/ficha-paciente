@@ -20,12 +20,14 @@ p{
     padding: 0%;
     font-weight: bold;
     color: #ffff;
-    text-align: center
+    text-align: center;
+    font-family: "Cairo", sans-serif;
 }
 h1{
     font-size: 9px;
     color: #ffff;
-    text-align: center
+    text-align: center;
+    font-family: "Cairo", sans-serif;
 }
 header{
     position: absolute;
@@ -36,16 +38,7 @@ header{
     justify-items: center;
     color: #ffff;
     font-size: 20px;
-}
-header{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    color: #ffff;
-    font-size: 20px;
+    margin-left: 40px;
 }
 .cabecalho2{
     width: 90%;
@@ -57,13 +50,14 @@ header{
     height: 100px;
     position: relative;
     margin: 0;
+    margin-left: 20px;
 }
 .campo1{
     display: block;
     margin-bottom: 0.2em;
     justify-content: space-between;
     color: #ffff;
-
+    font-family: "Cairo", sans-serif;
 }
 .campo1 input[type="text"], .campo1 input[type="number"], .campo1 input[type="date"], .campo2_2 input[type="text"] {
     border-radius: 0.3rem;
@@ -88,6 +82,7 @@ header{
     padding-top: 0.5em;
     color: #ffff;
     font-size: 15px;
+    font-family: "Cairo", sans-serif;
 }
 .campo2 label{
     font-size: 15px;
@@ -105,6 +100,7 @@ header{
     justify-content: space-between;
     padding: 0.5em;
     color: #ffff;
+    font-family: "Cairo", sans-serif;
     
 }
 .campo2_2 input[type="text"], .campo1 input[type="number"]{
@@ -113,4 +109,30 @@ header{
 }
 #idade_paciente, #idade_acompanhante{
     width: 30px;
+}
+input[type=submit] {
+    width: 150px;
+    background: #E72227;
+    color: white;
+    margin-left: 100px;
+}
+input[type=text]:hover,
+.input:hover {
+    background: #cccccc;
+    border: 1px solid #E72227;
+}
+input[type=number]:hover,
+.input:hover {
+    background: #cccccc;
+    border: 1px solid #E72227;
+}
+input[type=radio]:hover,
+.input:hover {
+    background: #cccccc;
+    border: 1px solid #E72227;
+}
+input[type=date]:hover,
+.input:hover {
+    background: #cccccc;
+    border: 1px solid #E72227;
 }

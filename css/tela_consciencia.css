@@ -55,6 +55,8 @@ header{
     display: flex;
     flex-direction: column;
     border: #000000 solid;
+    color: black;
+    background-color: white;
     width: 20%;
     
 }

@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: solid 1px;
+    background-color: #540B0E;
+}
+.cabecalho{
+    width: 100%;
+    font-size: 15px;
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    color: #ffff;
+    background-color: #CB997E;
+}h1{
+    font-size: 20px;
+    padding: 0%;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+}
+p{
+    font-size: 15px;
+    color: #ffff;
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+}
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    color: #ffff;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.logo{
+    width: 130px;
+    height: 100px;
+    position: relative;
+    margin: 0;
+    margin-left: 20px;
+}
+.cabecalho2{
+    width: 90%;
+    font-size: 15px;
+    border: solid 1px;
+}
+.subtitulo{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corpo_humano{
+    width: 250px;
+    height: 250px;
+    margin: 0;
+    margin-left: 50px;
+}
+.campo1{
+    color: white;
+    font-family: "Cairo", sans-serif;
+}
+.campo2{
+    color: white;
+    font-family: "Cairo", sans-serif;
+}
+.campo3{
+    color: white;
+    font-family: "Cairo", sans-serif;
+}
+.subtitulo2{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

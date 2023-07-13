@@ -63,26 +63,50 @@ header{
     width: 250px;
     height: 250px;
     margin: 0;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 .campo1{
     color: white;
     font-family: "Cairo", sans-serif;
-}
-.campo2{
-    color: white;
-    font-family: "Cairo", sans-serif;
-}
-.campo3{
-    color: white;
-    font-family: "Cairo", sans-serif;
+    font-size: 10px;
 }
 .subtitulo2{
     width: 100%;
+    height: 40px;
     background-color: black;
     color: white;
     font-family: "Cairo", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+}
+.campo2{
+    background-color: white;
+    color: black;
+    font-family: "Cairo", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.titulo_campo2{
+    background-color: #9B9699;
+    height: 30px;
+    color: white;
+    font-size: 26px;
+    border: 1px solid black;
+}
+.campos2{
+    border: 2px solid black;
+}
+.campo2 input[type="text"]{
+    width: 72px;
+    height: 10px;
+}
+.titulo_campo3{
+    background-color: #000000;
+    height: 30px;
+    color: white;
+    font-size: 26px;
+    border: 1px solid black;
 }

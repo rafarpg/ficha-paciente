@@ -1,0 +1,13 @@
+        CPF: <input type="text" id="cpf"> <br>
+        <map name="meu_mapeamento">
+            <area href="#" shape="circle" coords="864,975,10" onclick="Gravar('frente pulso esquerdo',864,975,10;">
+        </map>
+    <script>
+        function Gravar(local,x,y,r)
+        {
+            c = cpf.value
+            console.log("CPF:",c,"Ferimento:",local,"Localização:",x,y,r)
+            window.open("grava.php?cpf="+c+"&local="+local+"&x="+x+"&y="+y+"&r="+r,"_blank")
+    
+        }
+    </script>

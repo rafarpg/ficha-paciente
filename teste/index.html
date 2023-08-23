@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta charset="utf8">
+	<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+	
+	<script type="text/javascript">
+	
+	
+		function Listar(){
+			// A variável "dados" conterá todos os campos do <form id="form1">
+			var dados = $('#form1').serialize(); // TODOS OS CAMPOS DO <form> DEVEM TER 'name='
+			
+			$.ajax({
+				type: "POST",
+                url: "arquivo.php",
+				data: dados,
+				dataType: 'json',
+				                
+                success: function(meu_json)
+				{
+					
+					var valores = meu_json;          // Vem do arquivo.php
+					var lista = valores.usuarios;  // Pega os dados dos "empregados"
+                  
+					for(x=0;x<lista.length;x++)
+					{
+
+						console.log(lista[x].email);
+						console.log(lista[x].cpf);
+						console.log(lista[x].senha);
+						console.log("  ");
+					}
+				},
+				error: function(xhr, status, error) {
+					// Aqui poderíamos preencher uma <div> com o innerHTML por exemplo
+            		console.error('Ocorreu um erro ao enviar os dados: ' + error);
+          		},
+				beforeSend: function(xhr) {
+					// Faz algo antes do envio, como exibir uma animação por exemplo.
+				},
+				complete: function(xhr, status) {
+					// Faz algo após a conclusão, como ocultar uma animação por exemplo. 
+					// Vai ser executado mesmo se ocorrer um erro.
+				},
+				timeout: 5000    // Define um tempo limite de 5 segundos (5000 milissegundos)
+			});
+			
+			
+		}
+	</script>
+</head>
+<body>
+	<form method="post" action="" id="form1">
+
+		E-mail:  <input  type="text"   id="email"  name="email"  value="" /> <br>
+		CPF:  <input  type="text"   id="cpf"  name="cpf"  value="" /> <br>
+		Senha:  <input  type="password"   id="senha"  name="senha"  value="" /> <br>
+
+		<input type="button" name="enviar" value="Enviar" onclick="Listar();" />
+
+	</form>
+	<a href="login_crip.html" class="texto2" target="_self">Entrar</a>
+</body>
+</html>

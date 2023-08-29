@@ -1,0 +1,81 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #540B0E;
+}
+.cabecalho{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(245, 207, 161);
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 40px;
+    box-shadow: 2px -2px 2px;
+    padding-top: 15px;
+}
+.campo{
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #FFFF;
+    border: 0;
+    padding-top: 30px;
+    margin: 20px;
+}
+img{
+    padding-bottom: 10px;
+}
+.campo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding: 25px;
+}
+label{
+    font-size: 18px;
+    padding-left: 10px;
+}
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;  
+    margin: 3px;
+}
+.enviar{
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #ffff;
+    border: none;
+}
+a.voltar{
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #ffff;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.enviar:hover{
+    background-color: #bb2328;
+    cursor: pointer;
+}
+.voltar:hover{
+    background-color: #bb2328;
+}

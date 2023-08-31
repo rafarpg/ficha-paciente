@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<title>Enviar Imagem</title>
+<script type="text/javascript">
+	
+	
+		function Listar(){
+			// A variável "dados" conterá todos os campos do <form id="form1">
+			var dados = $('#form3').serialize(); // TODOS OS CAMPOS DO <form> DEVEM TER 'name='
+			
+			$.ajax({
+				type: "POST",
+                url: "img_acidente.php",
+				data: dados,
+				dataType: 'json',
+				                
+                success: function(meu_json)
+				{
+					
+					var valores = meu_json;          // Vem do arquivo.php
+					var lista = valores.acidente;  // Pega os dados dos "empregados"
+				},
+				error: function(xhr, status, error) {
+					// Aqui poderíamos preencher uma <div> com o innerHTML por exemplo
+            		console.error('Ocorreu um erro ao enviar os dados: ' + error);
+          		},
+				beforeSend: function(xhr) {
+					// Faz algo antes do envio, como exibir uma animação por exemplo.
+				},
+				complete: function(xhr, status) {
+					// Faz algo após a conclusão, como ocultar uma animação por exemplo. 
+					// Vai ser executado mesmo se ocorrer um erro.
+				},
+				timeout: 5000    // Define um tempo limite de 5 segundos (5000 milissegundos)
+			});
+			
+			
+		}
+</script>
 </head>
 <body>
-	<form action="salvar_imagem.php" method="post" enctype="multipart/form-data">
-		Login: <input type="text" name="login">
-		Senha: <input type="text" name="senha">
+	<form action="" method="post" enctype="multipart/form-data" id="form3">
+		Descrição: <input type="text" name="descricao">
 		<br> <br>
-		Selecione uma imagem: <input type="file" id="imagem" name="imagem">
+		Insira uma imagem do Acidente: <input type="file" id="img_acidente" name="imagem">
 		<br> <br>
 		<input type="submit" value="Enviar">
 	</form>

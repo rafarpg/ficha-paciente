@@ -86,3 +86,11 @@ a.voltar{
     color: gray;
     background-color: #000000;
 }
+input[type=text] {
+    background-color: #E72227;
+    color: white;
+}
+input[type=password] {
+    background-color: #E72227;
+    color: white;
+}

@@ -58,31 +58,11 @@ input{
 .enviar{
     width: 150px;
     height: 40px;
-    border-radius: 40px;
     background-color: #E72227;
     border: none;
     color: white;
 }
-a.voltar{
-    width: 150px;
-    height: 40px;
-    border-radius: 40px;
-    background-color: #E72227;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    cursor: pointer;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-}
 .enviar:hover{
-    color: gray;
-    background-color: #000000;
-}
-.voltar:hover{
     color: gray;
     background-color: #000000;
 }
@@ -93,4 +73,11 @@ input[type=text] {
 input[type=password] {
     background-color: #E72227;
     color: white;
+}
+.esquece{
+    color: white;
+    margin-left: 40px;
+}
+.cadastro{
+    color: #00a6fb;
 }

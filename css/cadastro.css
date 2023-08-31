@@ -15,6 +15,8 @@ body{
     font-size: 40px;
     box-shadow: 2px -2px 2px;
     padding-top: 15px;
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
 }
 .campo{
     justify-content: center;
@@ -28,6 +30,7 @@ body{
     border: 0;
     padding-top: 30px;
     margin: 20px;
+    font-family: 'Playfair Display', serif;
 }
 img{
     padding-bottom: 10px;

@@ -61,6 +61,7 @@ input{
     background-color: #E72227;
     border: none;
     color: white;
+    cursor: pointer;
 }
 .enviar:hover{
     color: gray;
@@ -77,8 +78,35 @@ input[type=password] {
 .esquece{
     color: white;
     margin-left: 40px;
+    font-family: "Cairo", sans-serif;
 }
 .cadastro{
+    margin-left: 240px;
+    font-family: "Cairo", sans-serif;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
     color: #00a6fb;
-    margin-left: 40px;
+}
+.login{
+    color: white;
+    margin-left: 140px;
+    font-family: "Cairo", sans-serif;
+}
+.logins{
+    margin-left: 100px;
+    cursor: pointer;
+}
+#nome::placeholder{
+    color: white;
+}
+#email::placeholder{
+    color: white;
+}
+#telefone::placeholder{
+    color: white;
+}
+#senha::placeholder{
+    color: white;
 }

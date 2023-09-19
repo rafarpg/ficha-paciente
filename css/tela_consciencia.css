@@ -83,7 +83,27 @@ header{
     width: 20%;
 }
 .fundinho{
-    height: 320px;
+    height: 180px;
+    border: #000000 solid 1px;
+    background-color: white;
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fundinho2{
+    height: 140px;
+    border: #000000 solid 1px;
+    background-color: white;
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fundinho3{
+    height: 160px;
     border: #000000 solid 1px;
     background-color: white;
     font-family: "Cairo", sans-serif;
@@ -104,13 +124,7 @@ td, tr{
 }
 h2{
     margin: 0;
-    font-size: 12px;
-}
-.gcs{
-    height: 100px;
-    background-color: white;
-    color: #000000;
-    border: #000000 solid 1px;
+    font-size: 20px;
 }
 .continuar {
     width: 220px;
@@ -135,4 +149,28 @@ footer{
     color: white;
     box-sizing: border-box;
     margin-top: 10px;
+}
+.total{
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    top: 685px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cairo", sans-serif;
+    border: #000000 solid 1px;
+}
+.total2{
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    top: 1172px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cairo", sans-serif;
+    border: #000000 solid 1px;
 }

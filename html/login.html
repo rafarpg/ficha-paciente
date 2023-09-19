@@ -21,7 +21,7 @@
 			
 			$.ajax({
 				type: "POST",
-                url: "cadastro.php",
+                url: "login.php",
 				data: dados,
 				dataType: 'json',
 				                
@@ -32,11 +32,11 @@
 					var lista = valores.usuarios;  // Pega os dados dos "empregados"
                                     if (resultado==1)
                 {
-                    alert("Dados Gravados")
+                    alert("")
                 }
             },
             error: function(xhr, status, error) {
-                console.error('Ocorreu um erro ao enviar os dados: ' + error);
+                console.error('E-mail ou senha incorretos ' + error);
               },
             beforeSend: function(xhr) {
             },
@@ -51,26 +51,20 @@
     <div class="campo">
         <img src="../imagens/noar.png" width="150px">
         <form method="post" action="" id="form1">
-            <label>Nome: </label><br><input type="text" name="nome" id="nome" placeholder="Insira o nome" value="" required><br>
-            <label>Email: </label><br><input type="text" name="email" id="email" placeholder="Insira o email" value="" required><br>
-            <label>Telefone: </label><br><input type="text" name="telefone" id="telefone" placeholder="Insira o telefone" value="" required><br>
-            <label>Senha: </label><br><input type="password" name="senha" id="senha" placeholder="Insira a senha" value="" required><br>
+            <label>Email: </label><br><input type="text" name="email" id="email" placeholder="Insira sua email" value="" required><br>
+            <label>Senha: </label><br><input type="password" name="senha" id="senha" placeholder="Insira sua senha" value="" required><br>
     </div>
-    <br>
-    <div class="esquece">Esqueceu a senha?</div>
-    <div class="cadastro"><a href="../html/cadastro.html">Cadastrar-se</a></div>
-    <div class="campo2">
-
-            <input type="button" class="enviar" name="enviar" id="enviar" value="Salvar" onclick="Inserir();" />
-    </div>
-
-    <div class="login">Login com:</div>
-    <br>
-    <div class="logins">
-        <img src="../imagens/facebook-logo.webp" width="40px">&nbsp;&nbsp;&nbsp;
-        <img src="../imagens/google-logo.png" width="40px">&nbsp;&nbsp;&nbsp;
-        <img src="../imagens/linkedin-logo.png" width="40px">
-    </div>
+                <br>
+                <div class="campo2">
+                    <input type="button" class="entrar" name="entrar" id="entrar" value="Entrar" onclick="Inserir();" />
+                </div>
+                <div class="campo3"><a href="../html/cadastro.html">esqueci minha senha</a></div>
+                <div class="login">Login com:</div><br>
+                <div class="logins">
+                    <img src="../imagens/facebook-logo.webp" width="40px">&nbsp;&nbsp;&nbsp;
+                    <img src="../imagens/google-logo.png" width="40px">&nbsp;&nbsp;&nbsp;
+                    <img src="../imagens/linkedin-logo.png" width="40px">
+                </div>
         </form>
     
 </body>

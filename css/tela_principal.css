@@ -13,6 +13,11 @@ body{
     padding: 0;
     color: #ffff;
     background-color: #CB997E;
+    justify-content: right;
+    align-content: right;
+    align-items: right;
+    align-content: right;
+    text-align: center;
 }
 h1{
     font-size: 20px;
@@ -35,9 +40,9 @@ header{
     align-content: center;
     justify-content: center;
     justify-items: center;
+    text-align: center;
     color: #ffff;
-    font-size: 20px;
-    margin-left: 40px;
+    font-size: 25px;
 }
 .cabecalho2{
     width: 90%;

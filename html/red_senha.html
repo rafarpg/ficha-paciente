@@ -21,7 +21,7 @@
 			
 			$.ajax({
 				type: "POST",
-                url: "login.php",
+                url: "cadastro.php",
 				data: dados,
 				dataType: 'json',
 				                
@@ -32,11 +32,11 @@
 					var lista = valores.usuarios;  // Pega os dados dos "empregados"
                                     if (resultado==1)
                 {
-                    alert("")
+                    alert("Dados Gravados")
                 }
             },
             error: function(xhr, status, error) {
-                console.error('E-mail ou senha incorretos ' + error);
+                console.error('Ocorreu um erro ao enviar os dados: ' + error);
               },
             beforeSend: function(xhr) {
             },
@@ -51,7 +51,7 @@
     <div class="campo">
         <img src="../imagens/noar.png" width="150px">
         <form method="post" action="" id="form1">
-            <label>Email: </label><br><input type="text" name="email" id="email" placeholder="Insira sua email" value="" required><br>
+            <label>Email: </label><br><input type="text" name="email" id="email" placeholder="Insira seu email" value="" required><br>
             <label>Senha: </label><br><input type="password" name="senha" id="senha" placeholder="Insira sua senha" value="" required><br>
     </div>
                 <br>

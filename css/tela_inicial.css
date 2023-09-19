@@ -1,45 +1,69 @@
 body{
     padding: 0;
     margin: 0;
+    border: solid 1px;
     background-color: #540B0E;
 }
-.cabecalho{
-    width: 100vw;
-    height: 10vh;
-    background-color: #CB997E;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    font-size: 40px;
-    box-shadow: 2px -2px 2px;
-    padding-top: 15px;
-    color: aliceblue;
-    font-family: 'Playfair Display', serif;
-}
-.logo{
-    margin-left: 100px;
-}
-.entrar{
-    width: 200px;
-    height: 50px;
-    margin-top: 100px;
-    margin-left: 75px;
-    background-color: #E72227;
-    text-decoration: none;
-    color: white;
+nav{
+    width: 100%;
+    font-size: 15px;
+    border: solid 1px;
     display: flex;
-    cursor: pointer;
     flex-direction: row;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
+    padding: 0;
+    color: #ffff;
+    background-color: #CB997E;
+    justify-content: right;
+    align-content: right;
+    align-items: right;
+    align-content: right;
+    text-align: center;
 }
-.entrar:hover{
-    color: gray;
-    background-color: #000000;
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 200px;
+}
+.banner{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.texto .botoes button{
+    width: 220px;
+    height: 50px;
+    color: white;
+    background-color: #E72227;
+    cursor: pointer;
+    margin-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.texto .titulo{
+    color: #ca6702;
+    animation: pulsar 2.5s infinite;
+    font-size: 60px;
+    font-weight: 600;
+}
+@keyframes pulsar {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 footer{
     width: 100%;
@@ -51,5 +75,6 @@ footer{
     background: #CB997E;
     color: white;
     box-sizing: border-box;
-    margin-top: 280px;
+    font-size: 20px;
+    font-weight: 600;
 }

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Login</title>
 </head>
-<link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+<link rel="stylesheet" type="text/css" href="../css/login.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
@@ -47,28 +47,24 @@
         });
 		}
 	</script>
-    <div class="cabecalho">CADASTRO</div>
+    <div class="cabecalho">LOGIN</div>
     <div class="campo">
         <img src="../imagens/noar.png" width="150px">
         <form method="post" action="" id="form1">
-            <label>Nome: </label><br><input type="text" name="nome" id="nome" placeholder="Insira o nome" value="" required><br>
-            <label>Email: </label><br><input type="text" name="email" id="email" placeholder="Insira o email" value="" required><br>
-            <label>Telefone: </label><br><input type="text" name="telefone" id="telefone" placeholder="Insira o telefone" value="" required><br>
-            <label>Senha: </label><br><input type="password" name="senha" id="senha" placeholder="Insira a senha" value="" required><br>
-            <label>Perfil: </label>
-            <select name="perfil" id="perfil">
-                <option value=""></option>
-                <option value="administrador">administrador</option>
-                <option value="normal">normal</option>
-            </select>
+            <label>Email: </label><br><input type="text" name="email" id="email" placeholder="Insira seu email" value="" required><br>
+            <label>Senha: </label><br><input type="password" name="senha" id="senha" placeholder="Insira sua senha" value="" required><br>
     </div>
-    <div class="campo2">
-        
-            <a class="voltar" href="tela_inicial.html">Voltar</a>
-                &nbsp; &nbsp; &nbsp;
-            <input type="button" class="enviar" name="enviar" id="enviar" value="Salvar" onclick="Inserir();" />
-    </div>
-
+                <br>
+                <div class="campo2">
+                    <input type="button" class="entrar" name="entrar" id="entrar" value="Entrar" onclick="Inserir();" />
+                </div>
+                <div class="campo3"><a href="../html/cadastro.html">esqueci minha senha</a></div>
+                <div class="login">Login com:</div><br>
+                <div class="logins">
+                    <img src="../imagens/facebook-logo.webp" width="40px">&nbsp;&nbsp;&nbsp;
+                    <img src="../imagens/google-logo.png" width="40px">&nbsp;&nbsp;&nbsp;
+                    <img src="../imagens/linkedin-logo.png" width="40px">
+                </div>
         </form>
     
 </body>

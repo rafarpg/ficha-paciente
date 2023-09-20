@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23-Ago-2023 às 14:06
+-- Tempo de geração: 20-Set-2023 às 12:30
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -20,6 +20,18 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `ficha_paciente`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `atendimento`
+--
+
+CREATE TABLE `atendimento` (
+  `num_atendimento` int(11) NOT NULL,
+  `id_paciente` int(11) NOT NULL,
+  `data` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -54,6 +66,18 @@ CREATE TABLE `dados_paciente` (
   `idade_paciente` int(11) NOT NULL,
   `idade_acompanhante` int(11) NOT NULL,
   `local_ocorrencia` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `img_acidente`
+--
+
+CREATE TABLE `img_acidente` (
+  `id_img_acidente` int(11) NOT NULL,
+  `img_acidente` mediumblob NOT NULL,
+  `descricao` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -188,31 +212,56 @@ CREATE TABLE `tipo_ocorrencia` (
 
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
+  `nome` varchar(100) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `cpf` varchar(14) NOT NULL,
-  `senha` varchar(50) NOT NULL
+  `telefone` varchar(14) NOT NULL,
+  `senha` varchar(50) NOT NULL,
+  `perfil` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `email`, `cpf`, `senha`) VALUES
-(1, 'rafa@hotmail.com', '985.483.956-83', 'e7d80ffeefa212b7c5c55700e4f7193e'),
-(2, 'teste@gmail.com', '123.321.456-21', '732002cec7aeb7987bde842b9e00ee3b'),
-(3, 'teste@gmail.com', '123.321.456-21', 'e7d80ffeefa212b7c5c55700e4f7193e'),
-(4, 'teste@gmail.com', '123.321.456-21', '10a9c136d796bab18d3e144092a4f20a'),
-(5, 'teste@gmail.com', '123.321.456-21', '8a6156f4a9d1d328fc123137dee90627');
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `telefone`, `senha`, `perfil`) VALUES
+(1, '', 'rafa@hotmail.com', '', 'e7d80ffeefa212b7c5c55700e4f7193e', ''),
+(2, '', 'teste@gmail.com', '', '732002cec7aeb7987bde842b9e00ee3b', ''),
+(3, '', 'teste@gmail.com', '', 'e7d80ffeefa212b7c5c55700e4f7193e', ''),
+(4, '', 'teste@gmail.com', '', '10a9c136d796bab18d3e144092a4f20a', ''),
+(5, '', 'teste@gmail.com', '', '8a6156f4a9d1d328fc123137dee90627', ''),
+(6, 'rafa2', 'rafa@hotmail.com', '47912341234', 'senha1234', ''),
+(7, 'rafa3', 'rafa2@gmail.com', '47912341234', '732002cec7aeb7987bde842b9e00ee3b', ''),
+(8, 'rafa4', 'rafa4@gmail.com', '47912341234', '732002cec7aeb7987bde842b9e00ee3b', ''),
+(9, 'rafa4', 'rafa4@gmail.com', '47912341234', '732002cec7aeb7987bde842b9e00ee3b', ''),
+(10, 'rafa5', 'rafa5@gmail.com', '47912341234', '732002cec7aeb7987bde842b9e00ee3b', ''),
+(11, 'rafa5', 'rafa5@gmail.com', '47912341234', 'd41d8cd98f00b204e9800998ecf8427e', ''),
+(12, 'rafa5', 'rafa5@gmail.com', '47912341234', 'd41d8cd98f00b204e9800998ecf8427e', ''),
+(13, 'rafa5', 'rafa5@gmail.com', '47912341234', 'd41d8cd98f00b204e9800998ecf8427e', ''),
+(14, 'rafa5', 'rafa5@gmail.com', '47912341234', 'd41d8cd98f00b204e9800998ecf8427e', ''),
+(15, 'Rafael dos Passos', 'rafael@gmail.com', '48995931382', 'e7d80ffeefa212b7c5c55700e4f7193e', 'administrador'),
+(16, 'Pedro Israel', 'pedro@gmail.com', '379863475', '0740aeab01c11bc05bd503652d3be878', 'normal');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
+-- Índices para tabela `atendimento`
+--
+ALTER TABLE `atendimento`
+  ADD PRIMARY KEY (`num_atendimento`);
+
+--
 -- Índices para tabela `dados_paciente`
 --
 ALTER TABLE `dados_paciente`
   ADD PRIMARY KEY (`id_paciente`);
+
+--
+-- Índices para tabela `img_acidente`
+--
+ALTER TABLE `img_acidente`
+  ADD PRIMARY KEY (`id_img_acidente`);
 
 --
 -- Índices para tabela `usuarios`
@@ -225,16 +274,28 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de tabela `atendimento`
+--
+ALTER TABLE `atendimento`
+  MODIFY `num_atendimento` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de tabela `dados_paciente`
 --
 ALTER TABLE `dados_paciente`
   MODIFY `id_paciente` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de tabela `img_acidente`
+--
+ALTER TABLE `img_acidente`
+  MODIFY `id_img_acidente` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

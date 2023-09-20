@@ -2,6 +2,7 @@
 <html lang="pt-br"></html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/tela_inicial.css">
   <style>
     body {
       font-family: "Cairo", sans-serif;
@@ -11,17 +12,32 @@
     label {
       display: block;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     label img {
-      margin-right: 10px;
-      width: 20px;
-      height: 20px;
+      margin-right: 5px;
+      width: 40px;
+      height: 40px;
+    }
+    .cabecalho {
+      width: 100vw;
+      height: 10vh;
+      background-color: #CB997E;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      font-size: 30px;
+      box-shadow: 2px -2px 2px;
+      padding-top: 15px;
+      color: aliceblue;
+      font-family: 'Playfair Display', serif;
     }
   </style>
 </head>
 <body>
-  <h1>Tipo de Ocorrência <br> (Pré Hospitalar)</h1>
+  <h1 class="cabecalho">Tipo de Ocorrência <br> (Pré Hospitalar)</h1>
 
   <form>
     <label>
@@ -126,13 +142,10 @@
   </label>
   <label>
   <input type="checkbox">
-  <input type="text">
+  <input type="text" value="Outro:" width="60px">
   </label>
   <input type="submit" id="enviar" name="enviar" value="Enviar">
-      <img src="" alt="Imagem 18">
-    <input type="checkbox">
   </label>
-  <input type="text" value="Outro:" width="60px">
   </form>
 </body>
 </html>

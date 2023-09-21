@@ -73,6 +73,7 @@ header{
 }
 .campo1 input[type="text"]{
     width: 180px;
+    height: 60px;
 }
 .campo1 label{
     font-size: 16px;
@@ -97,6 +98,7 @@ header{
     border: 1px solid;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
     margin-top: 10px;
+    height: 30px;
 }
 .campo2_2{
     display: block;
@@ -110,6 +112,7 @@ header{
 .campo2_2 input[type="text"], .campo1 input[type="number"]{
     width: 200px;
     margin-top: 10px;
+    height: 30px;
 }
 #idade_paciente, #idade_acompanhante{
     width: 30px;

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/tela_inicial.css">
+  <style>
+    body {
+      font-family: "Cairo", sans-serif;
+      background-color: #540B0E;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #CB997E;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      color: aliceblue;
+      font-family: 'Playfair Display', serif;
+    }
+    .cabecalho {
+      background-color: #CB997E;
+      text-align: center;
+      font-size: 30px;
+      padding: 15px 0;
+      color: aliceblue;
+      font-family: 'Playfair Display', serif;
+    }
+    footer {
+      background: #CB997E;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column; /* For mobile layout, stack columns */
+      padding: 20px;
+    }
+    .column {
+      flex-basis: 100%; /* Full width for columns in mobile layout */
+      margin-bottom: 10px; /* Add space between columns */
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    label img {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+    input[type="checkbox"] {
+      border: 2px solid #FF0000;
+    }
+    #Continuar {
+      margin: 20px 0;
+      background-color: #FF0000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #Continuar:hover {
+      background-color: #CC0000;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 767px) {
+      .container {
+        padding: 10px; /* Reduce padding for smaller screens */
+      }
+      .column {
+        flex-basis: 100%; /* Full width for columns in mobile layout */
+        margin-bottom: 5px; /* Reduce space between columns */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Security Firer
+  </header>
+  <h1 class="cabecalho">Procedimentos Efetuados</h1>
+
+  <form>
+    <div class="container">
+      <div class="column">
+        <label>
+          <input type="checkbox">
+          Tratado Choque
+        </label>
+        <label>
+          <input type="checkbox">
+          Uso de Cânula
+        </label>
+        <label>
+          <input type="checkbox">
+          Uso Colar Tam
+        </label>
+        <label>
+          <input type="checkbox">
+          Uso KED
+        </label>
+        <label>
+          <input type="checkbox">
+          Uso TTF
+        </label>
+        <label>
+          <input type="checkbox">
+          Ventilação Suporte
+        </label>
+        <label>
+          <input type="checkbox">
+          Oxigenioterapia
+        </label>
+        <label>
+          <input type="checkbox">
+          Reanimador
+        </label>
+      </div>
+      <div class="column">
+        <label>
+          <input type="checkbox">
+          Meios Auxiliares
+        </label>
+        <label>
+          <input type="checkbox">
+          Celesc
+        </label>
+        <label>
+          <input type="checkbox">
+          Polícia
+        </label>
+        <label>
+          <input type="checkbox">
+          IGP / PC
+        </label>
+        <label>
+          <input type="checkbox">
+          Samu
+        </label>
+        <label>
+          <input type="checkbox">
+          CIT
+        </label>
+        <label>
+            <input type="text">
+            :
+          </label>
+    </div>
+    <div class="column">
+      <label>
+          <input type="checkbox">
+          DEF. Civil:
+        </label>
+        <label>
+          <input type="checkbox">
+          Civil:
+        </label>
+        <label>
+          <input type="checkbox">
+          Militar:
+        </label>
+        <label>
+          <input type="checkbox">
+          PRE:
+        </label>
+        <label>
+          <input type="checkbox">
+          PRF:
+        </label>
+      </div>
+  </div>
+    <input type="button" id="Continuar" name="Continuar" value="Continuar">
+  </form>
+
+  <footer>
+    Copyright 2023 © - Security Firer
+  </footer>
+</body>
+</html>

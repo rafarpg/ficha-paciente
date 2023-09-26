@@ -74,13 +74,13 @@ nav .logo a{
     right: 0;
     z-index: 2;
     top: 70px;
-    font-size: 25px;
  }
 .nav-item{
     margin: 16px 0;
 }
 a{
     color: #ca6702;
+    font-size: 12px;
 }
 .banner{
     height: 100vh;

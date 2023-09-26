@@ -1,3 +1,62 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #540B0E;
+}
+.cabecalho{
+    width: 100%;
+    font-size: 15px;
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    color: #ffff;
+    background-color: #CB997E;
+    justify-content: right;
+    align-content: center;
+    align-items: right;
+    text-align: center;
+}
+h1{
+    font-size: 20px;
+    padding: 0%;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+}
+p{
+    font-size: 9px;
+    color: #ffff;
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+}
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: #ffff;
+    font-size: 25px;
+}
+.cabecalho2{
+    width: 90%;
+    font-size: 15px;
+    border: solid 1px;
+}
+.logo{
+    width: 130px;
+    height: 100px;
+    position: relative;
+    margin: 0;
+    margin-left: 20px;
+}
+.security_logo{
+    width: 250px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -28,9 +87,8 @@ nav{
 }
 nav .logo a{
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 600;
-    margin-left: 20px;
 }
 .logo span{
     color: #ca6702;
@@ -69,19 +127,16 @@ nav .logo a{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
 }
 .nav-menu.ativo{
     right: 0;
     z-index: 2;
-    top: 70px;
  }
 .nav-item{
     margin: 16px 0;
 }
-a{
-    color: #ca6702;
-    font-size: 12px;
-}
+
 .banner{
     height: 100vh;
     background-size: cover;
@@ -125,16 +180,12 @@ a{
         transform: scale(1);
     }
 }
-footer{
+#footer {
+    position: absolute;
+    bottom: -5px;
     width: 100%;
-    height: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #CB997E;
-    color: white;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: 600;
+    height: 5rem;            
+    background-color: #CB997E;
+    border: solid 1px;
+    border-color: #ffff;
 }

@@ -15,7 +15,7 @@
     <script type="text/javascript">
 	
 	
-    function Inserir(){
+    function Login(){
 			// A variável "dados" conterá todos os campos do <form id="form1">
 			var dados = $('#form1').serialize(); // TODOS OS CAMPOS DO <form> DEVEM TER 'name='
 			
@@ -27,7 +27,7 @@
 				                
                 success: function(meu_json)
 				{
-					
+
 					var valores = meu_json;          // Vem do arquivo.php
 					var lista = valores.usuarios;  // Pega os dados dos "empregados"
                                     if (resultado==1)
@@ -41,9 +41,12 @@
             beforeSend: function(xhr) {
             },
             complete: function(xhr, status) {
-                alert("Dados Gravados")
+                alert("Bem-vindo!")
+                window.location.href = "tela_principal.html"
+                
             },
             timeout: 5000
+            
         });
 		}
 	</script>
@@ -56,7 +59,7 @@
     </div>
                 <br>
                 <div class="campo2">
-                    <a href="../html/tela_principal.html"></ahref><input type="button" class="entrar" name="entrar" id="entrar" value="Entrar" onclick="Inserir();" /></a>
+                <input type="button" class="entrar" name="entrar" id="entrar" value="Entrar" onclick="Login();" /></a>
                 </div>
                 <div class="campo3"><a href="../html/cadastro.html">esqueci minha senha</a></div>
                 <div class="login">Login com:</div><br>

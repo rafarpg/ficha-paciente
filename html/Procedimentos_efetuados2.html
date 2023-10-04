@@ -4,12 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/tela_inicial.css">
   <style>
-    body {
-      font-family: "Cairo", sans-serif;
-      background-color: #540B0E;
-      color: white;
-      margin: 0;
-      padding: 0;
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: #540B0E;
+    color: white;
+    margin: 0;
+    padding: 0;
     }
     header {
       background-color: #CB997E;
@@ -20,7 +20,7 @@
       font-family: 'Playfair Display', serif;
     }
     .cabecalho {
-      background-color: #000000;
+      background-color: #CB997E;
       text-align: center;
       font-size: 30px;
       padding: 15px 0;
@@ -61,16 +61,21 @@
       border: 5px solid #FF0000;
     }
     #Continuar {
-      margin: 20px 0;
-      background-color: #FF0000;
+      width: 220px;
+      height: 50px;
       color: white;
-      padding: 10px 20px;
-      border: none;
+      background-color: #E72227;
       cursor: pointer;
-      transition: background-color 0.3s;
+      margin-left: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin-right: 70px;
     }
-    #Continuar:hover {
-      background-color: #CC0000;
+    #Continuar:active {
+    color: gray;
+    background-color: #000000;
     }
     .menu .bar{
     display: block;
@@ -115,31 +120,9 @@
   </style>
 </head>
 <body>
-  <nav>
-
-    <ul class="nav-menu">
-        <li class="nav-item"><a href="#">Tela Inicial</a></li>
-        <li class="nav-item"><a href="#">Tela Principal</a></li>
-        <li class="nav-item"><a href="#">Tipo de Ocorrência</a></li>
-        <li class="nav-item"><a href="#">Problemas Encontrados</a></li>
-        <li class="nav-item"><a href="#">Sinais e Sintomas</a></li>
-        <li class="nav-item"><a href="#">Localização de Traumas</a></li>
-        <li class="nav-item"><a href="#">Avaliação do Paciente</a></li>
-        <li class="nav-item"><a href="#">Sinais Vitais</a></li>
-        <li class="nav-item"><a href="#">OBJ, FDC, VIE</a></li>
-        <li class="nav-item"><a href="#">Decisão Transporte</a></li>
-        <li class="nav-item"><a href="#">Procedimentos Efetuados</a></li>
-    </ul>
-    <div class="menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-
-    <div class="logo">
-        <a href="#" class="logo">Ficha<span>de</span>Ocorrência</a>
-    </div>
-</nav>
+  <header>
+    Security Firer
+  </header>
   <h1 class="cabecalho">Procedimentos Efetuados</h1>
 
   <form>
@@ -234,10 +217,9 @@
     </div>
     <input type="button" id="Continuar" name="Continuar" value="Continuar">
   </form>
-
+  <br>
   <footer>
     Copyright 2023 © - Security Firer
   </footer>
 </body>
-<script src="../js/tela_inicial.js"></script>
 </html>

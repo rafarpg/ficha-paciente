@@ -32,6 +32,13 @@
 .fl-table td {
     border-right: 1px solid #f8f8f8;
     font-size: 12px;
+    cursor: pointer;
+}
+.fl-table td:active {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+    background-color: #a7c957;
+    color: #ffffff;
 }
 
 .fl-table thead th {

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/tela_inicial.css">
+  <style>
+    body {
+      font-family: "Cairo", sans-serif;
+      background-color: #540B0E;
+      color: white;
+      margin: 0; 
+      padding: 0; 
+    }
+    header {
+      background-color: #CB997E;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      color: aliceblue;
+      font-family: 'Playfair Display', serif;
+    }
+    label {
+      display: block;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    label img {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+    .cabecalho {
+      width: 100vw;
+      height: 10vh;
+      background-color: #000000;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      font-size: 30px;
+      box-shadow: 2px -2px 2px;
+      padding-top: 15px;
+      color: aliceblue;
+      font-family: 'Playfair Display', serif;
+    }
+    footer {
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #CB997E;
+      color: white;
+      box-sizing: border-box;
+      margin-top: 20px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .column {
+      flex-basis: calc(50% - 10px);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #Continuar {
+      margin: 10px 0;
+      background-color: #FF0000;
+      color: white;
+      padding: 10px 20px; 
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s; 
+    }
+    #Continuar:hover {
+      background-color: #CC0000; 
+    }
+    
+    input[type="checkbox"] {
+      border: 5px solid #FF0000; 
+    }
+    .menu{
+    cursor: pointer;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu.ativo .bar:nth-child(1){
+    transform:  translateY(8px) rotate(45deg);
+}
+.menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu.ativo .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: white;
+    gap: -10px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu.ativo{
+    right: 0;
+    z-index: 2;
+    top: 70px;
+ }
+.nav-item{
+    margin: 16px 0;
+}
+  </style>
+</head>
+<body>
+  <nav>
+
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="#">Tela Inicial</a></li>
+        <li class="nav-item"><a href="#">Tela Principal</a></li>
+        <li class="nav-item"><a href="#">Tipo de Ocorrência</a></li>
+        <li class="nav-item"><a href="#">Problemas Encontrados</a></li>
+        <li class="nav-item"><a href="#">Sinais e Sintomas</a></li>
+        <li class="nav-item"><a href="#">Localização de Traumas</a></li>
+        <li class="nav-item"><a href="#">Avaliação do Paciente</a></li>
+        <li class="nav-item"><a href="#">Sinais Vitais</a></li>
+        <li class="nav-item"><a href="#">OBJ, FDC, VIE</a></li>
+        <li class="nav-item"><a href="#">Decisão Transporte</a></li>
+        <li class="nav-item"><a href="#">Procedimentos Efetuados</a></li>
+    </ul>
+    <div class="menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="logo">
+        <a href="#" class="logo">Ficha<span>de</span>Ocorrência</a>
+    </div>
+</nav>
+  <h1 class="cabecalho">Sinais e Sintomas</h1>
+
+  <form>
+    <div class="container">
+      <div class="column">
+        <label>
+          <input type="checkbox" name="" id="">
+          Abdomen sensível ou rígido:
+        </label>
+        <label>
+          <input type="checkbox" name="" id="">
+          Afundamento de crânio:
+        </label>
+        <label>
+          <input type="checkbox" name="" id="">
+          Agitação:
+        </label>
+        <label>
+          <input type="checkbox" name="" id="">
+          Amnésia:
+        </label>
+        <label>
+          <input type="checkbox" name="" id="">
+          Angina de peito:
+        </label>
+        <label>
+          <input type="checkbox" name="" id="">
+          Apnéia:
+        </label>
+        <label>
+            <input type="checkbox" name="" id="">
+            Bradicardia:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Brandipnéia:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Bronco-aspirado:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Cefaléia:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Cianose*:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Convulsão:
+          </label>
+          <label>
+              <input type="checkbox" name="" id="">
+              Decorticação:
+            </label>
+            <label>
+              <input type="checkbox" name="" id="">
+              Deformidade:
+            </label>
+            <label>
+              <input type="checkbox" name="" id="">
+              Descerebração:
+            </label>
+            <label>
+              <input type="checkbox" name="" id="">
+              Desmaio:
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                Desvio de traquéia:
+              </label>
+              <label>
+                <input type="checkbox" name="" id="">
+                Dispnéia:
+              </label>
+              <label>
+                <input type="checkbox" name="" id="">
+                Dor local:
+              </label>
+              <label>
+                <input type="checkbox" name="" id="">
+                Edema*:
+              </label>
+              <label>
+                <input type="checkbox" name="" id="">
+                Enfisema subcutâneo:
+              </label>
+              <label>
+                <input type="checkbox" name="" id="">
+              Êntase de jugular:
+              </label>
+              <label>
+                <input type="checkbox" name="" id="">
+                Face pálida:
+              </label>
+      </div>
+
+      <div class="column">
+        <label>
+            <input type="checkbox" name="" id="">
+            Hemorragia*:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Hipertensão:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Hipotensão:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Náuseas e vomitos:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Óbito:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Otorréia:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Otorragia:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Ovace:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Parada*:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Praiaprismo:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Prurido na pele:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Pupilas***:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Sede:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Sinal de battle:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Sinal de guaxinim:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Sudorese:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Taquipnéia:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Taquicardia:
+          </label>
+          <label>
+            <input type="checkbox" name="" id="">
+            Tontura:
+          </label>
+          <label>Outro:</label>
+            <input type="text" id="" name="">
+          <label>
+      </div>
+    </div>
+    <input type="button" id="Continuar" name="Continuar" value="Continuar"><a href="../html/login.html"></a>
+  </form>
+  <footer>
+    Copyright 2023 © - Security Firer
+  </footer>
+</body>
+<script src="../js/tela_inicial.js"></script>
+</html>

@@ -13,80 +13,37 @@
     list-style: none;
     text-decoration: none;
 }
-body {
+body{
     padding: 0;
     margin: 0;
     border: solid 1px;
     background-color: #540B0E;
-    }
-    header {
-      background-color: #CB997E;
-      padding: 10px;
-      text-align: center;
-      font-size: 24px;
-      color: aliceblue;
-      font-family: 'Playfair Display', serif;
-    }
-    .cabecalho {
-      background-color: #CB997E;
-      text-align: center;
-      font-size: 30px;
-      padding: 15px 0;
-      color: aliceblue;
-      font-family: 'Playfair Display', serif;
-    }
-    footer {
-      background: #CB997E;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
-    }
-    .container {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      color: white;
-    }
-    .column {
-      flex-basis: calc(50% - 10px);
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    label {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    label img {
-      margin-right: 10px;
-      width: 20px;
-      height: 20px;
-    }
-    input[type="checkbox"] {
-      border: 5px solid #FF0000;
-    }
-    #Continuar {
-      width: 220px;
-      height: 50px;
-      color: white;
-      background-color: #E72227;
-      cursor: pointer;
-      margin-left: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      margin-right: 70px;
-    }
-    #Continuar:active {
-    color: gray;
-    background-color: #000000;
-    }
-    .menu .bar{
+}
+nav{
+    width: 100%;
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    color: #ffff;
+    background-color: #CB997E;
+    justify-content: space-between;
+    padding: 18px 40px;
+    align-items: center;
+}
+nav .logo a{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.logo span{
+    color: #ca6702;
+}
+.menu{
+    cursor: pointer;
+}
+.menu .bar{
     display: block;
     width: 28px;
     height: 3px;
@@ -126,6 +83,69 @@ body {
 .nav-item{
     margin: 16px 0;
 }
+a{
+    color: #ca6702;
+    font-size: 12px;
+}
+.subtitulo{
+    font-size: 20px;
+    padding: 0%;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    background-color: #000000;
+}
+footer {
+  background: #CB997E;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+.column {
+  flex-basis: calc(50% - 10px);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+label img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+input[type="checkbox"] {
+  border: 5px solid #FF0000;
+}
+#Continuar {
+  width: 220px;
+  height: 50px;
+  color: white;
+  background-color: #E72227;
+  cursor: pointer;
+  margin-left: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 70px;
+}
+#Continuar:active {
+  color: gray;
+  background-color: #000000;
+}
   </style>
 </head>
 <body>
@@ -155,7 +175,7 @@ body {
     </div>
 </nav>
 
-  <h1 class="cabecalho">Procedimentos Efetuados</h1>
+  <div class="subtitulo">Procedimentos Efetuados</div>
   
   <form>
     <div class="container">

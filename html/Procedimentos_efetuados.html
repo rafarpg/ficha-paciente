@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/tela_inicial.css">
   <style>
@@ -30,19 +31,12 @@
       height: 20px;
     }
     .cabecalho {
-      width: 100vw;
-      height: 10vh;
-      background-color: #000000;
+      font-size: 20px;
+      padding: 0%;
+      font-weight: bold;
+      color: #ffff;
       text-align: center;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      font-size: 30px;
-      box-shadow: 2px -2px 2px;
-      padding-top: 15px;
-      color: aliceblue;
-      font-family: 'Playfair Display', serif;
+      background-color: #000000;
     }
     footer {
       width: 100%;
@@ -54,7 +48,8 @@
       background: #CB997E;
       color: white;
       box-sizing: border-box;
-      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 600;
     }
     .container {
       display: flex;
@@ -70,16 +65,16 @@
       align-items: center;
     }
     #Continuar {
-      margin: 10px 0;
-      background-color: #FF0000;
+      width: 200px;
+      height: 40px;
       color: white;
-      padding: 10px 20px; 
-      border: none;
+      background-color: #E72227;
       cursor: pointer;
-      transition: background-color 0.3s; 
+      border-radius: 10px;
     }
-    #Continuar:hover {
-      background-color: #CC0000; 
+    #Continuar:active {
+      color: gray;
+      background-color: #000000;
     }
     
     input[type="checkbox"] {

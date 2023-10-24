@@ -12,54 +12,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
 <body>
     <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
-    <script type="text/javascript">
-	
-	
-    function Login(){
-			// A variável "dados" conterá todos os campos do <form id="form1">
-			var dados = $('#form1').serialize(); // TODOS OS CAMPOS DO <form> DEVEM TER 'name='
-			
-			$.ajax({
-				type: "POST",
-                url: "login.php",
-				data: dados,
-				dataType: 'json',
-				                
-                success: function(meu_json)
-				{
-
-					var valores = meu_json;          // Vem do arquivo.php
-					var lista = valores.usuarios;  // Pega os dados dos "empregados"
-                                    if (resultado==1)
-                {
-                    alert("")
-                }
-            },
-            error: function(xhr, status, error) {
-                console.error('E-mail ou senha incorretos ' + error);
-              },
-            beforeSend: function(xhr) {
-            },
-            complete: function(xhr, status) {
-                alert("Bem-vindo!")
-                window.location.href = "tela_principal.html"
-                
-            },
-            timeout: 5000
-            
-        });
-		}
-	</script>
     <div class="cabecalho">LOGIN</div>
     <div class="campo">
         <img src="../imagens/noar.png" width="150px">
-        <form method="post" action="" id="form1">
+        <form method="post" action="login.php" id="form1">
             <label>Email: </label><br><input type="text" name="email" id="email" placeholder="Insira sua email" value="" required><br>
             <label>Senha: </label><br><input type="password" name="senha" id="senha" placeholder="Insira sua senha" value="" required><br>
     </div>
                 <br>
                 <div class="campo2">
-                <input type="button" class="entrar" name="entrar" id="entrar" value="Entrar" onclick="Login();" /></a>
+                <input type="submit" class="entrar" name="entrar" id="entrar" value="Entrar" /></a>
                 </div>
                 <div class="campo3"><a href="../html/cadastro.html">esqueci minha senha</a></div>
                 <div class="login">Login com:</div><br>

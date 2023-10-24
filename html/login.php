@@ -1,18 +1,41 @@
 <?php
-include("conecta.php");
+    session_start();
+    // print_r($_REQUEST);
+    if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']))
+    {
+        // Acessa
+        include_once('conecta.php');
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        $criptografada = md5($senha);
 
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$criptografada = md5($senha);
+        // print_r('Email: ' . $email);
+        // print_r('<br>');
+        // print_r('Senha: ' . $senha);
 
-$comando = $pdo->prepare("SELECT * FROM cadastro_bombeiro WHERE email = '$email' and senha = '$criptografada'");
-$resultado = $comando->execute();
-$n = $comando->rowCount();
-if ($n > 0) {
-    // Email e senha corretos
-    echo "success"; // Envia uma resposta de sucesso para o AJAX
-} else {
-    // Senha ou email incorretos
-    echo "error"; // Envia uma resposta de erro para o AJAX
-}
+        $sql = "SELECT * FROM usuarios WHERE email = '$email' and senha = '$criptografada'";
+
+        $result = $conexao->query($sql);
+
+        // print_r($sql);
+        // print_r($result);
+
+        if(mysqli_num_rows($result) < 1)
+        {
+            unset($_SESSION['email']);
+            unset($_SESSION['senha']);
+            header('Location: tela_principal.html');
+        }
+        else
+        {
+            $_SESSION['email'] = $email;
+            $_SESSION['senha'] = $criptografada;
+            header('Location: tela_principal.html');
+        }
+    }
+    else
+    {
+        // Não acessa
+        header('Location: login.html');
+    }
 ?>

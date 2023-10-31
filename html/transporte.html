@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/transporte.css">
+    <title>Decisão De Trasporte</title>
+</head>
+
+<body>
+    <nav>
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="tela_inicial.html">Tela Inicial</a></li>
+            <li class="nav-item"><a href="tela_principal.html">Tela Principal</a></li>
+            <li class="nav-item"><a href="tipo_de_ocorrencia.html">Tipo de Ocorrência</a></li>
+            <li class="nav-item"><a href="Problemas Encontrados Suspeitos.html">Problemas Encontrados</a></li>
+            <li class="nav-item"><a href="sinais_sintomas.html">Sinais e Sintomas</a></li>
+            <li class="nav-item"><a href="loc_traumas2.html">Localização de Traumas</a></li>
+            <li class="nav-item"><a href="ava.consciencia.html">Avaliação do Paciente</a></li>
+            <li class="nav-item"><a href="sintomas.html">Sinais Vitais</a></li>
+            <li class="nav-item"><a href="ofv.html">OBJ, FDC, VIE</a></li>
+            <li class="nav-item"><a href="transporte.html">Decisão Transporte</a></li>
+            <li class="nav-item"><a href="Procedimentos_efetuados.html">Procedimentos Efetuados</a></li>
+        </ul>
+        <div class="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="logo">
+            <a href="#" class="logo">Ficha<span>de</span>Ocorrência</a>
+        </div>
+        
+    </nav>
+    <div class="subtitulo">Decisão Transporte</div>
+
+    <table class="tabela">
+
+        <tr>
+            <td align="center" class="caixa">
+                <img class="img" src="../imagens/img1.png" alt="">
+                <div class="info">
+                    <label for="checkbox1">Crítico</label>
+                    <input type="checkbox" id="checkbox1">
+                </div>
+            </td>
+            <td align="center" class="caixa">
+                <img class="img" src="../imagens/img2.png" alt="">
+                <div class="info">
+                    <label for="checkbox2">Instável</label>
+                    <input type="checkbox" id="checkbox2">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" class="caixa">
+                <img class="img3" src="../imagens/img3.png" alt="">
+                <div class="info">
+                    <label for="checkbox3">Pontencial Instável</label>
+                    <input type="checkbox" id="checkbox3">
+                </div>
+            </td>
+            <td align="center" class="caixa">
+                <img class="img" src="../imagens/img4.png" alt="">
+                <div class="info">
+                    <label for="checkbox4">Estável</label>
+                    <input type="checkbox" id="checkbox4">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div class="toggle-container">
+
+        <button class="mostrar-ocultar">▼ Equipe de Atendimento</button>
+
+        <div class="content hidden">
+            <br>
+            <form>
+                <div class="letra">M: &nbsp; <input type="text" name="campoM"> </div>
+                <div class="letra">S1: &nbsp; <input type="text" name="campoS1"> </div>
+                <div class="letra">S2: &nbsp; <input type="text" name="campoS2"> </div>
+                <div class="letra">S3: &nbsp; <input type="text" name="campoS3"> </div>
+                <div class="letra">D: &nbsp; <input type="text" name="campoDemandante"> </div>
+                <div class="letra">E: &nbsp; <input type="text" name="campoEquipe"> </div>
+            </form>
+            
+            <input type="button" id="Continuar" name="Continuar" value="Continuar">
+            <br>
+            <footer>
+                Copyright 2023 © - Security Firer
+            </footer>
+            
+</body>
+    <script src="../js/transporte.js"></script>
+</html>

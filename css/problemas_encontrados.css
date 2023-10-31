@@ -1,0 +1,45 @@
+#Continuar {
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #E72227;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 70px;
+  }
+  #Continuar:active {
+    color: gray;
+    background-color: #000000;
+  }
+  .subtitulo{
+    font-size: 20px;
+    padding: 0%;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    background-color: #000000;
+}
+label {
+  display: block;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+label img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.column {
+  flex-basis: calc(50% - 10px);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

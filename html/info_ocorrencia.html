@@ -34,16 +34,16 @@
         </div>
     
     </nav>
-        <form action="registro2.php" method="post">
+        <form action="info_ocorrencia.php" method="post">
         <table class="campo2">
             <tr>
                 <td><label>N° USB:</label></td>
-                <td><input type="number" id="num" name="num_usb">&nbsp;&nbsp;&nbsp;<label for="cod_ir">CÓD. IR</label><input type="checkbox" name="cod_ir" id="cod_ir"></td>
+                <td><input type="number" id="num" name="num_usb" class="n_usb" ><label for="cod_ir"> CÓD. IR</label><input type="number" name="cod_ir" id="cod_ir" class="cod_ir"></td>
             </tr>
             
              <tr>
                 <td><label>N° Ocorr:</label></td>
-                <td><input type="number" id="num" name="num_ocorr">&nbsp;&nbsp;&nbsp;<label for="cod_ps">CÓD. PS</label><input type="checkbox" name="cod_ps" id="cod_ps"></td>
+                <td><input type="number" id="num" name="num_ocorr" class="n_ocorr"><label for="cod_ps"> CÓD. PS</label><input type="number" name="cod_ps" id="cod_ps" class="cod_ps"></td>
             </tr>
             </table>
             <table class="campo2_2">
@@ -56,18 +56,18 @@
                 <td><input type="text" id="km_final" name="km_final"></td>
              </tr>
              <tr>
-                <td><label>CÓD. SIA/SUS:</label></td>
+                <td><label>CÓD. SIA/SUS: </label></td>
                 <td><input type="text" id="cod_sia_sus" name="cod_sia_sus"></td>
             </tr>
         </table>
-        <input type="submit" id="enviar" name="enviar" value="Enviar">
+        <input type="submit" id="inserir" name="inserir" value="Enviar">
         </form>
     <br>
         <div class="logo_samu"><img src="../imagens/logo_samu.png" width="180px"></div>
 
         <footer>
             Copyright 2023 © - Security Firer
-          </footer>
+        </footer>
 </body>
     <script src="../js/tela_inicial.js"></script>
 </html>

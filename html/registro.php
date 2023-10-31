@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include("conecta.php");
 
     $nome_paciente = $_POST["nome_paciente"];
@@ -16,8 +15,6 @@ if(isset($_POST["inserir"]))
 { 
     $comando = $pdo->prepare("INSERT INTO dados_paciente (nome_paciente, rg_cpf_paciente, sexo_paciente, nome_hospital, nome_acompanhante, telefone_paciente, idade_paciente, idade_acompanhante, local_ocorrencia) VALUES (\"$nome_paciente\", \"$rg_cpf_paciente\" ,\"$sexo_paciente\",\"$nome_hospital\",\"$nome_acompanhante\",\"$telefone_paciente\",\"$idade_paciente\",\"$idade_acompanhante\",\"$local_ocorrencia\" )");
     $resultado = $comando->execute();  
-    $pacienteexisteId = $pdo->lastInsertId(); 
-    $_SESSION["id_paciente"] = $pacienteexisteId;
     header("Location: info_ocorrencia.html");
 }
 

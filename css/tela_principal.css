@@ -185,6 +185,28 @@ input[type=date]:hover,
     width: 150px;
     height: 20px;
 }
+.n_usb{
+    width: 100px;
+}
+.n_ocorr{
+    width: 100px;
+}
+.cod_ir{
+    width: 25px;
+}
+.cod_ps{
+    width: 25px;
+}
+.campo2_2 input[type="text"]{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 25px;
+    height: 25px;
+}
+.outro_sintoma{
+    width: 10px;
+}
+
 .logo_samu{
     display: flex;
     align-items: center;

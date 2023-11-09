@@ -11,6 +11,7 @@
 body{
     padding: 0;
     margin: 0;
+    height: 100%;
     border: solid 1px;
     background-color: #540B0E;
 }
@@ -57,7 +58,7 @@ nav .logo a{
     transform: translateY(-8px) rotate(-45deg);
 }
 .nav-menu{
-    position: fixed;
+    position: absolute;
     right: -100%;
     top: 70px;
     width: 100%;
@@ -69,6 +70,7 @@ nav .logo a{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: scroll;
 }
 .nav-menu.ativo{
     right: 0;

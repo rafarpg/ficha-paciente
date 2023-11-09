@@ -11,8 +11,8 @@
 body{
     padding: 0;
     margin: 0;
-    border: solid 1px;
     background-color: #540B0E;
+    color: #ffff;
 }
 nav{
     width: 100%;
@@ -30,6 +30,7 @@ nav .logo a{
     color: #fff;
     font-size: 1.4rem;
     font-weight: 600;
+    margin-left: 20px;
 }
 .logo span{
     color: #ca6702;
@@ -81,50 +82,68 @@ a{
     color: #ca6702;
     font-size: 12px;
 }
-.banner{
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.campo{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    align-content: center;
+    justify-items: center;
 }
-.texto .botoes button{
-    width: 220px;
-    height: 50px;
+.campo1{
+    display: flex;
+    margin-bottom: 10px;
+    color: #ffff;
+    font-family: "Cairo", sans-serif;
+}
+.campo1 input[type="text"], .campo1 input[type="password"] {
+    border-radius: 0.3rem;
+    border: 1px solid;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    display: block;
+    font-size: 12px;
+    margin: 10px;
+    margin-left: -5px;
+}
+.campo1 input[type="text"], .campo1 input[type="password"]{
+    width: 150px;
+    height: 20px;
+}
+.campo1 label{
+    font-size: 16px;
+}
+input[type=submit] {
+    width: 120px;
+    height: 40px;
     color: white;
     background-color: #E72227;
     cursor: pointer;
-    margin-left: 70px;
     display: flex;
+    justify-items: center;
+    align-content: center;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
 }
-.texto .botoes button:active {
+input[type=submit]:active{
     color: gray;
     background-color: #000000;
 }
-.texto .titulo{
-    color: #ca6702;
-    animation: pulsar 2.5s infinite;
-    font-size: 60px;
-    font-weight: 600;
+input[type=text]:hover,
+.input:hover {
+    background: #cccccc;
+    border: 1px solid #E72227;
 }
-@keyframes pulsar {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
+input[type=password]:hover,
+.input:hover {
+    background: #cccccc;
+    border: 1px solid #E72227;
 }
-footer{
+.logo_samu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
     width: 100%;
     height: 50px;
     padding: 10px;
@@ -136,12 +155,4 @@ footer{
     box-sizing: border-box;
     font-size: 20px;
     font-weight: 600;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
 }

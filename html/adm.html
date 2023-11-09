@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/tela_principal.css">
+    <link rel="stylesheet" type="text/css" href="../css/adm.css">
     <title>Tela de Adm</title>
 </head>
 <body>
+    <script src="../js/tela_principal.js"></script>
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+	
+	
+    function Inserir(){
+			// A variável "dados" conterá todos os campos do <form id="form1">
+			var dados = $('#form3').serialize(); // TODOS OS CAMPOS DO <form> DEVEM TER 'name='
+			
+			$.ajax({
+				type: "POST",
+                url: "alterar.php",
+				data: dados,
+				dataType: 'json',
+				                
+                success: function(meu_json)
+				{
+					
+					var valores = meu_json;          // Vem do arquivo.php
+					var lista = valores.usuarios;  // Pega os dados dos "empregados"
+                                    if (resultado==1)
+                {
+                    alert("Usuário cadastrado com sucesso!")
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('Ocorreu um erro ao enviar os dados: ' + error);
+              },
+            beforeSend: function(xhr) {
+            },
+            complete: function(xhr, status) {
+                alert("Dados Gravados")
+            },
+            timeout: 5000
+        });
+		}
+	</script>
+    <script>
+    function Deletar()
+    {
+        I = I.value
+        window.open("excluir.php?I="+I,"_self")
+    }
+    </script>
     <nav>
 
         <ul class="nav-menu">
@@ -34,64 +78,39 @@
         </div>
         
     </nav>
-        <form action="registro.php" method="post">
-        
+        <form action="alterar.php" method="post" id="form3">
+    
         <table class="campo1">
                 <tr>
-                    <td><label>Data:</label></td>
-                    <td><input type="date" id="data" name="data"></td>
-                    
+                    <td><label>Informe o usuário que será alterado:</label></td>
+                    <td><input type="text" id="alt_user" name="alt_user"></td>
                 </tr>
                 <tr>
-                    <td><label>Nome:</label></td>
-                    <td><label><input type="text" id="nome" name="nome"></label></td>
-                    
+                    <td><label>Alterar nome:</label></td>
+                    <td><input type="text" id="alt_nome" name="alt_nome"></td>
                 </tr>
                 <tr>
-                    <td><label>RG/CPF Paciente:</label></td>
-                    <td><input type="text" id="id_paciente" name="id_paciente"></td>
-                    
-                </tr>
-                <tr>    
-                    <td><label>Sexo do Paciente:</label></td>
-                    <td><label><input type="radio" id="sexo" name="sexo" value="masculino">Masculino</label>
-                    <label><input type="radio" id="sexo" name="sexo" value="feminino">Feminino</label></td>
-                    
+                    <td><label>Alterar senha:</label></td>
+                    <td><input type="password" id="alt_senha" name="alt_senha"></td>
                 </tr>
                 <tr>
-                    <td><label>Nome do Hospital:</label></td>
-                    <td><input type="text" id="hospital" name="hospital"></td>
-                
-                <tr>
-                    <td><label>Acompanhante:</label></td>
-                    <td><input type="text" id="acompanhante" name="acompanhante"></td>
-                    
+                    <td><label>Confirme seu usuário:</label></td>
+                    <td><input type="text" id="adm_user" name="adm_user"></td>
                 </tr>
-                <tr>
-                    <td><label>Telefone do Paciente:</label></td>
-                    <td><input type="text" id="telefone" name="telefone"></td>
-                    
-                </tr>
-                <tr>
-                    <td><label>Idade do Paciente:</label></td>
-                    <td><input type="number" id="idade_paciente" name="idade_paciente" class="idade"></td>
-                    
-                </tr>
-                <tr>
-                    <td><label>Idade do Acompanhante:</label></td>
-                    <td><input type="number" id="idade_acompanhante" name="idade_acompanhante" class="idade"></td>
-                    
-                </tr>
-                <tr>
-                    <td><label>Local da Ocorrência:</label></td>
-                    <td><input type="text" id="local_ocorrencia" name="local_ocorrencia"></td>
-            </tr>
-        </table>
+            </table>
+    <div class="campo">
+            <input type="submit" id="enviar" name="enviar" value="Enviar">
         </form>
-    <footer id="footer">
-        <img src="../imagens/Marca_GOV.png" width="120px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../imagens/security.png" width="120px">
+    </div>
+    <div class="campo2">
+        informe o e-mail usuário a ser deletado: 
+        <input type="text" name="ex_user" id="ex_user">
+        <button onclick="Deletar();" class="excluir">Excluir</button>
+    <footer>
+        <div class="rodape">
+        <img src="../imagens/Marca_GOV.png" width="120px"><img src="../imagens/security.png" width="120px">
+        </div>
     </footer>
-</body>
-    <script src="../js/tela_principal.js"></script>
-</body>
+</div>
+</body> 
 </html>

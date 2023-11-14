@@ -161,6 +161,8 @@ td, tr{
     cursor: pointer;
     border-radius: 10px;
     margin-left: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .continuar:active {
     color: gray;

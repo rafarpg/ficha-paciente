@@ -14,17 +14,25 @@ body{
     background-color: #540B0E;
     color: #ffff;
 }
-nav{
+.nav-menu{
+    position: absolute;
+    right: -100%;
+    top: 70px;
     width: 100%;
-    border: solid 1px;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    color: #ffff;
-    background-color: #CB997E;
-    justify-content: space-between;
-    padding: 18px 40px;
+    height: 100%;
+    flex-direction: column;
+    background-color: white;
+    gap: -10px;
+    transition: 0.3s;
+    display: none;
     align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    animation: deslizar 2s forwards;
+}
+@keyframes deslizar {
+    0%{ transform: translate(0%,-100%);}
+    100%{ transform: translate(0%,0%); z-index: 1;}
 }
 nav .logo a{
     color: #fff;

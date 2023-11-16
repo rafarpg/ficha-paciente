@@ -72,10 +72,15 @@ nav .logo a{
     background-color: white;
     gap: -10px;
     transition: 0.3s;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     overflow-y: scroll;
+    animation: deslizar 2s forwards;
+}
+@keyframes deslizar {
+    0%{ transform: translate(0%,-100%);}
+    100%{ transform: translate(0%,0%); z-index: 1;}
 }
 .nav-menu.ativo{
     right: 0;
@@ -159,7 +164,7 @@ input[type="checkbox"] {
 <body>
   <nav>
 
-    <ul class="nav-menu">
+    <ul class="nav-menu" id="nav-menu">
       <li class="nav-item"><a href="tela_inicial.html">Tela Inicial</a></li>
             <li class="nav-item"><a href="tela_principal.html">Tela Principal</a></li>
             <li class="nav-item"><a href="tipo_de_ocorrencia.html">Tipo de Ocorrência</a></li>

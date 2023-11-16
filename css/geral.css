@@ -124,10 +124,15 @@ nav .logo a{
     background-color: white;
     gap: -10px;
     transition: 0.3s;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     overflow-y: scroll;
+    animation: deslizar 2s forwards;
+}
+@keyframes deslizar {
+    0%{ transform: translate(0%,-100%);}
+    100%{ transform: translate(0%,0%); z-index: 1;}
 }
 .nav-menu.ativo{
     right: 0;

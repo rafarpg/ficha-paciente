@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    padding: 0;
+    margin: 0;
+    border: solid 1px;
+    background-color: #540B0E;
+}
+nav{
+    width: 100%;
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    color: #ffff;
+    background-color: #CB997E;
+    justify-content: space-between;
+    padding: 18px 40px;
+    align-items: center;
+}
+nav .logo a{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.logo span{
+    color: #ca6702;
+}
+.menu{
+    cursor: pointer;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu.ativo .bar:nth-child(1){
+    transform:  translateY(8px) rotate(45deg);
+}
+.menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu.ativo .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+    position: absolute;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: white;
+    gap: -10px;
+    transition: 0.3s;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    animation: deslizar 2s forwards;
+}
+@keyframes deslizar {
+    0%{ transform: translate(0%,-100%);}
+    100%{ transform: translate(0%,0%); z-index: 1;}
+}
+.nav-menu.ativo{
+    right: 0;
+    z-index: 2;
+    top: 70px;
+ }
+.nav-item{
+    margin: 16px 0;
+}
+a{
+    color: #ca6702;
+    font-size: 12px;
+}
+.subtitulo{
+    font-size: 18px;
+    padding: 0%;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    background-color: #000000;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #CB997E;
+  color: white;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+.column {
+  flex-basis: calc(50% - 10px);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+label img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+input[type="checkbox"] {
+  border: 5px solid #FF0000;
+  width: 40px;
+  height: 20px;
+}
+input[type="text"] {
+  width: 100px;
+  height: 20px;
+}
+#Continuar {
+  width: 220px;
+  height: 50px;
+  color: white;
+  background-color: #E72227;
+  cursor: pointer;
+  margin-left: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 70px;
+}
+#Continuar:active {
+  color: gray;
+  background-color: #000000;
+}
+#picture__input {
+  display: none;
+}
+
+.picture {
+  width: 400px;
+  aspect-ratio: 16/9;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border: 2px dashed currentcolor;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+
+.picture:hover {
+  color: #777;
+  background: #ccc;
+}
+
+.picture:active {
+  border-color: turquoise;
+  color: turquoise;
+  background: #eee;
+}
+
+.picture:focus {
+  color: #777;
+  background: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+  max-width: 100%;
+}
+  </style>
+</head>
+<body>
+  <nav>
+
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="tela_inicial.html">Tela Inicial</a></li>
+      <li class="nav-item"><a href="tela_principal.html">Tela Principal</a></li>
+      <li class="nav-item"><a href="tipo_de_ocorrencia.html">Tipo de Ocorrência</a></li>
+      <li class="nav-item"><a href="Problemas Encontrados Suspeitos.html">Problemas Encontrados</a></li>
+      <li class="nav-item"><a href="sinais_sintomas.html">Sinais e Sintomas</a></li>
+      <li class="nav-item"><a href="loc_traumas2.html">Localização de Traumas</a></li>
+      <li class="nav-item"><a href="ava.consciencia.html">Avaliação do Paciente</a></li>
+      <li class="nav-item"><a href="sintomas.html">Sinais Vitais</a></li>
+      <li class="nav-item"><a href="ofv.html">OBJ, FDC, VIE</a></li>
+      <li class="nav-item"><a href="transporte.html">Decisão Transporte</a></li>
+      <li class="nav-item"><a href="Procedimentos_efetuados.html">Procedimentos Efetuados</a></li>
+    </ul>
+    <div class="menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="logo">
+        <a href="#" class="logo">Ficha<span>de</span>Ocorrência</a>
+    </div>
+</nav>
+  <div class="subtitulo">Termo de Recusa de Atendimento e/ou Transporte</div>
+  
+  <label class="picture" for="picture__input" tabIndex="0">
+    <span class="picture__image"></span>
+  </label>
+  Anexe abaixo uma foto do seu termo de recusa prenchido
+  <input type="file" name="picture__input" id="picture__input">
+      </div>
+    </div>
+    <input type="button" id="Continuar" name="Continuar" value="Continuar">
+  </form>
+  <br>
+  <footer>
+    <img src="../imagens/Marca_GOV.png" width="120px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../imagens/security.png" width="120px">
+  </footer>
+</body>
+  <script src="../js/tela_inicial.js"></script>
+  <script src="Foto.js"> </script>
+</html>

@@ -118,7 +118,7 @@ footer {
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0px;
   color: white;
 }
 .column {
@@ -133,19 +133,19 @@ label {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  color: white;
 }
 label img {
   margin-right: 10px;
   width: 20px;
   height: 20px;
 }
-input[type="checkbox"] {
-  border: 5px solid #FF0000;
-  width: 40px;
-  height: 20px;
-}
 input[type="text"] {
   width: 100px;
+  height: 20px;
+}
+input[type="text2"] {
+  width: 360px;
   height: 20px;
 }
 #Continuar {
@@ -193,44 +193,33 @@ input[type="text"] {
         <a href="#" class="logo">Ficha<span>de</span>Ocorrência</a>
     </div>
 </nav>
-  <div class="subtitulo">Avaliação Da Cinematica</div>
+  <div class="subtitulo">Responsável pelo Preenchimento</div>
   
-  <form>
     <div class="container">
       <div class="column">
-        <label>
-            Disturbio de comportamento?
-          <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>       
-        </label>
-        <label>
-            Encontrado de Capacete?
-          <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>       
-        </label>
-        <label>
-            Encontrado de Cinto?
-          <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>       
-        </label>
-        <label>
-            Para-Brisas Avariado?
-          <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>       
-        </label>
-        <label>
-            Caminhado na Cena?
-          <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>       
-        </label>
-        <label>
-            Painel Avariado?
-          <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>       
-        </label>
-        <label>
-            Volante Torcido?
-          <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>       
-        </label>
-        <label>
+        <br>
+        <label>Ficha:&nbsp;&nbsp;<input type="text" id="rpp" name="rpp">&nbsp;&nbsp;Fibra&nbsp;&nbsp;<input type="text" id="rpp" name="rpp"></label>
       </div>
     </div>
+    <div class="subtitulo">Objetos Importantes</div>
+    <br>
+        <label>
+            <input type="text2" id="objetos" name="objetos">       
+        </label>
+        <br>
+        <div class="subtitulo">Termo de Recusa de Atendimento e/ou Transporte</div>
+    <br>
+        <label>EU&nbsp;&nbsp;<input type="text" id="termo_recusa" name="termo_recusa"></label>
+        <br>
+        <label>PORTADOR DA CARTEIRA DE IDENTIDADE RG N&nbsp;&nbsp;<input type="text" id="termo_recusa" name="termo_recusa"></label>
+        <br>
+        <label>INSCRITO NO CPF SOB N&nbsp;&nbsp;<input type="text" id="termo_recusa" name="termo_recusa"></label>
+        <br>
+        <label>RESPONSAVEL PELA RECUSA&nbsp;&nbsp;<input type="text" id="termo_recusa" name="termo_recusa"></label>
+
+        <br>
+
     <input type="button" id="Continuar" name="Continuar" value="Continuar">
-  </form>
   <br>
   <footer>
     <img src="../imagens/Marca_GOV.png" width="120px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../imagens/security.png" width="120px">

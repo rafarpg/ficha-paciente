@@ -64,16 +64,26 @@
       flex-direction: column;
       align-items: center;
     }
-    #Continuar {
+    .continuar {
       width: 200px;
       height: 40px;
       color: white;
       background-color: #E72227;
       cursor: pointer;
       border-radius: 10px;
-      margin-bottom: 20px;
+      font-size: 20px;
+      text-align: center;
     }
-    #Continuar:active {
+    .campo4{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    }
+    .continuar:active {
       color: gray;
       background-color: #000000;
     }
@@ -206,6 +216,10 @@
           </label>
           <label>
             <input type="checkbox"  name="" id="">
+            Cervical:
+          </label>
+          <label>
+            <input type="checkbox"  name="" id="">
             Curativos:
           </label>
           <label>
@@ -260,34 +274,7 @@
                 <input type="checkbox"  name="" id="">
                 Reanimador:
               </label>
-              <label>
-                <input type="checkbox"  name="" id="">
-                Meios Auxiliares:
-              </label>
-              <label>
-                <input type="checkbox"  name="" id="">
-                Celesc:
-              </label>
-              <label>
-                <input type="checkbox"  name="" id="">
-                Polícia:
-              </label>
-              <label>
-                <input type="checkbox"  name="" id="">
-                IGP / PC:
-              </label>
-              <label>
-                  <input type="checkbox"  name="" id="">
-                  Samu:
-                </label>
-                <label>
-                  <input type="checkbox"  name="" id="">
-                  CIT:
-                </label>
-                <label>
-                  <input type="text"  name="" id="">
-                  :
-                </label>
+
       </div>
 
       <div class="column">
@@ -336,10 +323,6 @@
               Quadril:
             </label>
             <label>
-              <input type="checkbox"  name="" id="">
-              Cervical:
-            </label>
-            <label>
                 <input type="checkbox"  name="" id="">
                 R.C.P:
               </label>
@@ -354,6 +337,10 @@
               <label>
                 <input type="checkbox"  name="" id="">
                 Tomada Decisão:
+              </label>
+              <label>
+                <input type="checkbox"  name="" id="">
+                Meios Auxiliares:
               </label>
               <label>
                 <input type="checkbox"  name="" id="">
@@ -375,10 +362,35 @@
                 <input type="checkbox"  name="" id="">
                 PRF:
               </label>
+              <label>
+                <input type="checkbox"  name="" id="">
+                Celesc:
+              </label>
+              <label>
+                <input type="checkbox"  name="" id="">
+                Polícia:
+              </label>
+              <label>
+                <input type="checkbox"  name="" id="">
+                IGP / PC:
+              </label>
+              <label>
+                  <input type="checkbox"  name="" id="">
+                  Samu:
+                </label>
+                <label>
+                  <input type="checkbox"  name="" id="">
+                  CIT:
+                </label>
+                <label>
+                  Outro:<input type="text"  name="" id="">
+                </label>
       </div>
     </div>
-    <input type="button" id="Continuar" name="Continuar" value="Continuar"><a href="../html/login.html"></a>
   </form>
+  <div class="campo4">
+  <a href="agradecimento.html" class="continuar">Continuar</a>
+  </div>
   <footer>
     <img src="../imagens/Marca_GOV.png" width="120px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../imagens/security.png" width="120px">
   </footer>

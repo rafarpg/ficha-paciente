@@ -210,3 +210,22 @@ footer {
     align-items: center;
     border-radius: 10px;
 }
+.continuar {
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #E72227;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .campo4{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 10px;
+  }

@@ -20,4 +20,5 @@ echo("{\"resultado\":1}");
 $json_texto = json_encode(["usuarios" => $usuarios]);
 echo($json_texto);  // Será retornado para dentro do "success" do arquivo index.html
 echo "Usuário Cadastrado!";
+header("location:login.html");
 ?>

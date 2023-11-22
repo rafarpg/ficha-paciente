@@ -1,31 +1,27 @@
+
 <?php
+
 include("conecta.php");
-    session_start();
-    if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']))
-    {
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
 
-        $sql = "SELECT * FROM usuarios WHERE email = '$email' and senha = '$senha'";
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+$criptografada = md5($senha);
 
-        $result = $conexao->query($sql);
+$comando = $pdo->prepare("SELECT * FROM usuarios WHERE email = '$email' AND senha = '$criptografada';");
+    
+$comando->execute();
 
-        if(mysqli_num_rows($result) < 1)
-        {
-            unset($_SESSION['email']);
-            unset($_SESSION['senha']);
-            header('Location: login.html');
-            
-        }
-        else
-        {
-            $_SESSION['email'] = $email;
-            $_SESSION['senha'] = $senha;
-            header('Location: tela_principal.html');
-        }
-    }
-    else
-    {
-        header('Location: tela_inicial.html');
+    if($comando->rowCount() == 1){
+        $usuario = $comando->fetch();
+        
+        //usuário autenticado!
+        session_start();
+        $_SESSION["nome"] = $usuario['nome'];
+        $_SESSION["id"] = $usuario['id'];
+        $_SESSION["conectado"] = "true";
+        header("location:tela_principal.html");
+    }else{
+        //e-mail ou senha incorretos.
+        header("location:tela_inicial.html");
     }
 ?>

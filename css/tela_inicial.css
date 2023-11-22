@@ -11,7 +11,6 @@
 body{
     padding: 0;
     margin: 0;
-    height: 100%;
     border: solid 1px;
     background-color: #540B0E;
 }
@@ -113,6 +112,9 @@ a{
 .texto .botoes button:active {
     color: gray;
     background-color: #000000;
+}
+.texto .botoes button:hover {
+    text-decoration: underline;
 }
 .texto .titulo{
     color: #ca6702;

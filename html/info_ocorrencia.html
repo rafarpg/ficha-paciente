@@ -7,11 +7,32 @@
     <title>Ficha de Atendimento</title>
     <link rel="stylesheet" type="text/css" href="../css/tela_principal.css">
 </head>
+<style>
+    .continuar {
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #E72227;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    }
+    .campo4{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    }
+</style>
 <body>
     <nav>
 
         <ul class="nav-menu" id="nav-menu">
-            <li class="nav-item"><a href="tela_inicial.html">Tela Inicial</a></li>
+            <li class="nav-item"><a href="index.html">Tela Inicial</a></li>
             <li class="nav-item"><a href="tela_principal.html">Tela Principal</a></li>
             <li class="nav-item"><a href="tipo_de_ocorrencia.html">Tipo de Ocorrência</a></li>
             <li class="nav-item"><a href="Problemas Encontrados Suspeitos.html">Problemas Encontrados</a></li>
@@ -62,7 +83,9 @@
                 <td><input type="text" id="cod_sia_sus" name="cod_sia_sus"></td>
             </tr>
         </table>
-        <input type="submit" id="inserir" name="inserir" value="Enviar">
+            <div class="campo4"> 
+            <a class="continuar" id="continuar" name="continuar" href="tipo_de_ocorrencia.html">Continuar</a>
+             </div>
         </form>
     <br>
         <div class="logo_samu"><img src="../imagens/logo_samu.png" width="180px"></div>

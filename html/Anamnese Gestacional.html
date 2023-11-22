@@ -165,13 +165,32 @@ input[type="text"] {
   color: gray;
   background-color: #000000;
 }
+.continuar {
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: #E72227;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  }
+.campo4{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 10px;
+  }
   </style>
 </head>
 <body>
   <nav>
 
     <ul class="nav-menu">
-      <li class="nav-item"><a href="tela_inicial.html">Tela Inicial</a></li>
+      <li class="nav-item"><a href="index.html">Tela Inicial</a></li>
       <li class="nav-item"><a href="tela_principal.html">Tela Principal</a></li>
       <li class="nav-item"><a href="tipo_de_ocorrencia.html">Tipo de Ocorrência</a></li>
       <li class="nav-item"><a href="Problemas Encontrados Suspeitos.html">Problemas Encontrados</a></li>
@@ -193,43 +212,72 @@ input[type="text"] {
         <a href="#" class="logo">Ficha<span>de</span>Ocorrência</a>
     </div>
 </nav>
-  <div class="subtitulo">Anamnese da Emergêngia Médica</div>
+  <div class="subtitulo">Anamnese Gestacional</div>
   
   <form>
     <div class="container">
       <div class="column">
         <label>
-            O que aconteceu (Sinais e Sintomas)&nbsp;&nbsp;<input type="text"  name="" id="">
+            Perído Gestacional&nbsp;&nbsp;<input type="text"  name="" id="">
         </label>
         <label>
-            Aconteceu Outras Vezes <br>
+            Fez Pré-Natal? <br>
             <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">nao</input>
         </label>
         <label>
-            A quanto tempo isto aconteceu?&nbsp;&nbsp;<input type="text"  name="" id="">
+            Nome do Médico&nbsp;&nbsp;<input type="text"  name="" id="">
           </label>
           <label>
-            Possui algum problema de saúde? <br>
+            Existe Possibilidade da Complicações? <br>
             <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">nao</input>
         </label>
         <label>
-            Quais?&nbsp;&nbsp;<input type="text"  name="" id="">
+            Que Horas Iniciaram as Contrações?&nbsp;&nbsp;<input type="text"  name="" id="">
           </label>
           <label>
-            Faz uso de medicação? <br>
+            Tempo das Contrações:&nbsp;&nbsp;<input type="text"  name="" id="">
+          </label>
+          <label>
+            É o Primeiro Filho? <br>
             <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">nao</input>
         </label>
         <label>
             Horário da última medicação:&nbsp;&nbsp;<input type="text"  name="" id="">
           </label>
           <label>
-            Quais?&nbsp;&nbsp;<input type="text"  name="" id="">
+            Quantos Filhos?&nbsp;&nbsp;<input type="number"  name="" id="">
           </label>
-          
+          <label>
+            Sente Pressão na Região do Quadril ou Vontade de Evacuar? <br>
+            <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>
+        </label>
+          <label>
+            Já Houve Ruptura da Bolsa? <br>
+            <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>
+        </label>
+          <label>
+            Foi Feito Inspeção Visual? <br>
+            <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>
+        </label>
+          <label>
+            Parto Realizado? <br>
+            <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">não</input>
+        </label>
+          <label>
+            Sexo do Bebe: <br>
+            <input type="checkbox"  name="" id="">FEM</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">MAS</input>
+        </label>
         <label>
+          Nome do Bebe:&nbsp;&nbsp;<input type="text"  name="" id="">
+        </label>
+        <label>
+          Hora do Nascimento:&nbsp;&nbsp;<input type="datetime"  name="" id="">
+        </label>
       </div>
     </div>
-    <input type="button" id="Continuar" name="Continuar" value="Continuar">
+    <div class="campo4">
+      <a href="Avaliação Da Cinematica.html" class="continuar">Continuar</a>
+      </div>
   </form>
   <br>
   <footer>

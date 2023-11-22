@@ -167,13 +167,32 @@ input[type="text"] {
   color: gray;
   background-color: #000000;
 }
+.continuar {
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: #E72227;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  }
+.campo4{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 10px;
+  }
   </style>
 </head>
 <body>
   <nav>
 
     <ul class="nav-menu">
-      <li class="nav-item"><a href="tela_inicial.html">Tela Inicial</a></li>
+      <li class="nav-item"><a href="index.html">Tela Inicial</a></li>
       <li class="nav-item"><a href="tela_principal.html">Tela Principal</a></li>
       <li class="nav-item"><a href="tipo_de_ocorrencia.html">Tipo de Ocorrência</a></li>
       <li class="nav-item"><a href="Problemas Encontrados Suspeitos.html">Problemas Encontrados</a></li>
@@ -214,10 +233,38 @@ input[type="text"] {
         <label>
             Que horas?&nbsp;&nbsp;<input type="text"  name="" id="">
           </label>
+          <label>
+            O que aconteceu (Sinais e Sintomas)&nbsp;&nbsp;<input type="text"  name="" id="">
+        </label>
         <label>
+            Aconteceu Outras Vezes <br>
+            <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">nao</input>
+        </label>
+        <label>
+            A quanto tempo isto aconteceu?&nbsp;&nbsp;<input type="text"  name="" id="">
+          </label>
+          <label>
+            Possui algum problema de saúde? <br>
+            <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">nao</input>
+        </label>
+        <label>
+            Quais?&nbsp;&nbsp;<input type="text"  name="" id="">
+          </label>
+          <label>
+            Faz uso de medicação? <br>
+            <input type="checkbox"  name="" id="">sim</input>&nbsp;&nbsp;<input type="checkbox"  name="" id="">nao</input>
+        </label>
+        <label>
+            Horário da última medicação:&nbsp;&nbsp;<input type="text"  name="" id="">
+          </label>
+          <label>
+            Quais?&nbsp;&nbsp;<input type="text"  name="" id="">
+          </label>
       </div>
     </div>
-    <input type="button" id="Continuar" name="Continuar" value="Continuar">
+    <div class="campo4">
+      <a href="Anamnese Gestacional.html" class="continuar">Continuar</a>
+      </div>
   </form>
   <br>
   <footer>

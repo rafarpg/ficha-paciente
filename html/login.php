@@ -22,6 +22,6 @@ $comando->execute();
         header("location:tela_principal.html");
     }else{
         //e-mail ou senha incorretos.
-        header("location:tela_inicial.html");
+        header("location:login.html");
     }
 ?>

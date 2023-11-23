@@ -49,7 +49,10 @@
                 <tr>
                     <th> Código </th>
                     <th> Nome </th>
-                    <th colspan="2"> Ações </th>
+                    <th> E-mail </th>
+                    <th> Telefone</th>
+                    <th> Perfil </th>
+                    <th colspan="5"> Ações </th>
                 </tr>
             </thead>
             <tbody>

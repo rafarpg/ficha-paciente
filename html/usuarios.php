@@ -7,6 +7,27 @@
     <title>Ficha de Atendimento</title>
     <link rel="stylesheet" type="text/css" href="../css/tela_principal.css">
 </head>
+<style>
+.cabecalho{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    color: white;
+    font-size: 30px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+table{
+    border: 1px solid #FFFF;
+    background-color: #540B0E 40%;
+    color: #FFFF;
+    font-size:20px;
+}
+</style>
 <body>
 <nav>
 
@@ -39,12 +60,12 @@
 </nav>
 <main>
     <div class="cabecalho">
-    <a href="pagina_principal.php" class="nome_p">Bombiero : <?php session_start(); echo $_SESSION["nome"];?></a>
-    <a href="logout.php" class="sair">SAIR</a>
+    <a href="pagina_principal.php" class="nome_p">Bombeiro : <?php session_start(); echo $_SESSION["nome"];?></a>
+    <a href="index.html" class="sair">SAIR</a>
     </div>
     <div class="container">
         <a href="cadastro.html" class="botao"> CADASTRAR </a>
-        <table>
+        <table border="1" class="tabela">
             <thead>
                 <tr>
                     <th> Código </th>
@@ -61,10 +82,13 @@
                         	if(!empty($lista_usuarios)){
                             	foreach($lista_usuarios as $linha){
                                 	echo ' <tr>
-                                        	<td> '.$linha['idturma'] .' </td>
-                                        	<td> '.$linha['nome_turma'] .' </td>
-                                        	<td> <a href="excluir_turma.php?codigo_t='.$linha['idturma'].'"> Excluir <a> </td>
-                                        	<td> <a href="visualizar_turma.php?codigo_t='.$linha['idturma'].'"> Visualizar <a> </td>
+                                        	<td> '.$linha['id'] .' </td>
+                                        	<td> '.$linha['nome'] .' </td>
+                                            <td> '.$linha['email'] .' </td>
+                                            <td> '.$linha['telefone'] .' </td>
+                                            <td> '.$linha['perfil'] .' </td>
+                                        	<td> <a href="excluir_usuario.php?id='.$linha['id'].'"> Excluir <a> </td>
+                                        	<td> <a href="alterar_usuario.php?id='.$linha['id'].'"> Alterar <a> </td>
                                     	</tr>
                                 	';
                             	}

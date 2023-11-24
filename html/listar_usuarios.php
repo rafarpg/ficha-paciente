@@ -1,10 +1,8 @@
 <?php
         include_once("conecta.php");
-//session_start();
-    $codigo = $_SESSION["codigo"];
         
-        $comando = $pdo->prepare("SELECT id,nome,email,telefone,perfil FROM usuarios WHERE professores_idprofessor= ?;");
-        $comando->execute([$codigo]);
+        $comando = $pdo->prepare("SELECT * FROM usuarios;");
+        $comando->execute();
         
         
         if ($comando->rowCount() >= 1) {

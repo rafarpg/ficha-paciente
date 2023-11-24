@@ -27,69 +27,6 @@ table{
     color: #FFFF;
     font-size:20px;
 }
-
-@media (max-width: 767px) {
-    .tabela {
-        display: block;
-        width: 100%;
-    }
-    .tabela:before{
-        display: block;
-        text-align: right;
-        font-size: 11px;
-        color: white;
-        padding: 0 0 10px;
-    }
-    .tabela thead, .tabela tbody, .tabela thead th {
-        display: block;
-    }
-    .tabela thead th:last-child{
-        border-bottom: none;
-    }
-    .tabela thead {
-        float: left;
-    }
-    .tabela tbody {
-        width: auto;
-        position: relative;
-        overflow-x: auto;
-    }
-    .tabela td, .tabela th {
-        padding: 20px .625em .625em .625em;
-        height: 60px;
-        vertical-align: middle;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        overflow-y: auto;
-        width: 120px;
-        font-size: 13px;
-        text-overflow: ellipsis;
-    }
-    .tabela thead th {
-        text-align: left;
-        border-bottom: 1px solid #f7f7f9;
-    }
-    .tabela tbody tr {
-        display: table-cell;
-    }
-    .tabela tbody tr:nth-child(odd) {
-        background: none;
-    }
-    .tabela tr:nth-child(even) {
-        background: transparent;
-    }
-    .tabela tr td:nth-child(odd) {
-        background: #F8F8F8;
-        border-right: 1px solid #E6E4E4;
-    }
-    .tabela tr td:nth-child(even) {
-        border-right: 1px solid #E6E4E4;
-    }
-    .tabela tbody td {
-        display: block;
-        text-align: center;
-    } 
-}
 </style>
 <body>
 <nav>

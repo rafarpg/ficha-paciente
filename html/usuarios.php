@@ -60,7 +60,7 @@ table{
 </nav>
 <main>
     <div class="cabecalho">
-    <a href="pagina_principal.php" class="nome_p">Bombeiro : <?php session_start(); echo $_SESSION["nome"];?></a>
+    Bombeiro : <?php session_start(); echo $_SESSION["nome"];?>
     <a href="index.html" class="sair">SAIR</a>
     </div>
     <div class="container">

@@ -14,42 +14,6 @@
 <body>
     <script src="../js/tela_principal.js"></script>
     <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
-    <script type="text/javascript">
-	
-	
-    function Inserir(){
-			// A variável "dados" conterá todos os campos do <form id="form1">
-			var dados = $('#form3').serialize(); // TODOS OS CAMPOS DO <form> DEVEM TER 'name='
-			
-			$.ajax({
-				type: "POST",
-                url: "alterar.php",
-				data: dados,
-				dataType: 'json',
-				                
-                success: function(meu_json)
-				{
-					
-					var valores = meu_json;          // Vem do arquivo.php
-					var lista = valores.usuarios;  // Pega os dados dos "empregados"
-                                    if (resultado==1)
-                {
-                    alert("Usuário cadastrado com sucesso!")
-                }
-            },
-            error: function(xhr, status, error) {
-                console.error('Ocorreu um erro ao enviar os dados: ' + error);
-              },
-            beforeSend: function(xhr) {
-            },
-            complete: function(xhr, status) {
-                alert("Dados Gravados")
-            },
-            timeout: 5000
-        });
-		}
-	</script>
-
        <nav>
 
         <ul class="nav-menu" id="nav-menu">
@@ -78,12 +42,9 @@
         
     </nav>
     <main>
+    Usuário : 
         <form action="alterar.php" method="post" id="form3">
-    
         <table class="campo1">
-                <tr>
-                Bombeiro : <?php session_start(); echo $_SESSION["nome"];?>
-                </tr>
                 <tr>
                     <td><label>Alterar nome:</label></td>
                     <td><input type="text" id="alt_nome" name="alt_nome"></td>

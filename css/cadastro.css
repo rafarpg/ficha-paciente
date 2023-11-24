@@ -16,7 +16,9 @@ body{
     box-shadow: 2px -2px 2px;
     padding-top: 15px;
     color: aliceblue;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: solid 1px;
 }
 .campo{
     justify-content: center;

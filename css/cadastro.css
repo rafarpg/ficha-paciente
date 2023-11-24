@@ -79,13 +79,19 @@ a.voltar{
     align-content: center;
     align-items: center;
 }
+.enviar:active{
+    color: gray;
+    background-color: #000000;
+}
 .enviar:hover{
+    text-decoration: underline;
+}
+.voltar:active{
     color: gray;
     background-color: #000000;
 }
 .voltar:hover{
-    color: gray;
-    background-color: #000000;
+    text-decoration: underline;
 }
 input[type=text] {
     background-color: #E72227;

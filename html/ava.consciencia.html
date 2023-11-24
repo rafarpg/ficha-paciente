@@ -8,7 +8,7 @@
     <title>Avaliação de Consciência</title>
 </head>
 <style>
-        .continuar {
+    .continuar {
       width: 200px;
       height: 40px;
       color: white;
@@ -18,6 +18,10 @@
       font-size: 20px;
       text-align: center;
     }
+    .continuar:active {
+    color: gray;
+    background-color: #000000;
+}
     .campo4{
     display: flex;
     justify-content: center;
@@ -26,6 +30,7 @@
     align-content: center;
     text-align: center;
     margin: 10px;
+    margin-top: 40px;
     }
 </style>
 <body>
@@ -92,176 +97,146 @@
             <td><div class="subtitulo3">Maiores de 5 Anos</div></td>
         </tr>
         <tr>
-            <td><label for="espontanea">Espontânea</label></td>
-            <td><input type="checkbox" name="espontanea" id="espontanea" value="4"></td>
-            <td>4</td>
+            <td><label>Espontânea</label></td>
+            <td><input type="radio" name="maior_5" id="maior_5" value="4"> 4</td>
         </tr>
         <tr>
-            <td><label for="cv">Comando Verbal</label></td>
-            <td><input type="checkbox" name="cv" id="cv" value="3"></td>
-            <td>3</td>
+            <td><label>Comando Verbal</label></td>
+            <td><input type="radio" name="maior_5" id="maior_5" value="3"> 3</td>
         </tr>
         <tr>
-            <td><label for="estd">Estímulo Doloroso</label></td>
-            <td><input type="checkbox" name="estd" id="estd" value="2"></td>
-            <td>2</td>
+            <td><label>Estímulo Doloroso</label></td>
+            <td><input type="radio" name="maior_5" id="maior_5" value="2"> 2</td>
         </tr>
         <tr>
-            <td><label for="nenhuma">Nenhuma</label></td>
-            <td><input type="checkbox" name="nenhuma" id="nenhuma" value="1"></td>
-            <td>1</td>
+            <td><label>Nenhuma</label></td>
+            <td><input type="radio" name="maior_5" id="maior_5" value="1"> 1</td>
         </tr>
 
         <td></td>
 
         <tr>
-            <td><label for="orientado">Orientado</label></td>
-            <td><input type="checkbox" name="orientado" id="orientado" value="5"></td>
-            <td>5</td>
+            <td><label>Orientado</label></td>
+            <td><input type="radio" name="maior_5v" id="maior_5v" value="5"> 5</td>
         </tr>
         <tr>
-            <td><label for="confuso">Confuso</label></td>
-            <td><input type="checkbox" name="confuso" id="confuso" value="4"></td>
-            <td>4</td>
+            <td><label>Confuso</label></td>
+            <td><input type="radio" name="maior_5v" id="maior_5v" value="4"> 4</td>
         </tr>
         <tr>
-            <td><label for="pi">Palavras Inapropriadas</label></td>
-            <td><input type="checkbox" name="pi" id="pi" value="3"></td>
-            <td>3</td>
+            <td><label>Palavras Inapropriadas</label></td>
+            <td><input type="radio" name="maior_5v" id="maior_5v" value="3"> 3</td>
         </tr>
         <tr>
-            <td><label for="pc">Palavras Confusas</label></td>
-            <td><input type="checkbox" name="pc" id="pc" value="2"></td>
-            <td>2</td>
+            <td><label>Palavras Confusas</label></td>
+            <td><input type="radio" name="maior_5v" id="maior_5v" value="2"> 2</td>
         </tr>
         <tr>
-            <td><label for="nenhuma2">Nenhuma</label></td>
-            <td><input type="checkbox" name="nenhuma2" id="nenhuma2" value="1"></td>
-            <td>1</td>
+            <td><label>Nenhuma</label></td>
+            <td><input type="radio" name="maior_5v" id="maior_5v" value="1"> 1</td>
         </tr>
         <td></td>
 
         <tr>
-            <td><label for="oc">Obedece Comandos</label></td>
-            <td><input type="checkbox" name="oc" id="oc" value="6"></td>
-            <td>6</td>
+            <td><label>Obedece Comandos</label></td>
+            <td><input type="radio" name="maior_5m" id="maior_5m" value="6"> 6</td>
         </tr>
         <tr>
-            <td><label for="ld">Localizar Dor</label></td>
-            <td><input type="checkbox" name="ld" id="ld" value="5"></td>
-            <td>5</td>
+            <td><label>Localizar Dor</label></td>
+            <td><input type="radio" name="maior_5m" id="maior_5m" value="5"> 5</td>
         </tr>
         <tr>
-            <td><label for="mr">Movimento de Retira</label></td>
-            <td><input type="checkbox" name="mr" id="mr" value="4"></td>
-            <td>4</td>
+            <td><label>Movimento de Retira</label></td>
+            <td><input type="radio" name="maior_5m" id="maior_5m" value="4"> 4</td>
         </tr>
         <tr>
-            <td><label for="fa">Flexão Anormal</label></td>
-            <td><input type="checkbox" name="fa" id="fa" value="3"></td>
-            <td>3</td>
+            <td><label>Flexão Anormal</label></td>
+            <td><input type="radio" name="maior_5m" id="maior_5m" value="3"> 3</td>
         </tr>
         <tr>
-            <td><label for="ea">Extensão Anormal</label></td>
-            <td><input type="checkbox" name="ea" id="ea" value="2"></td>
-            <td>2</td>
+            <td><label>Extensão Anormal</label></td>
+            <td><input type="radio" name="maior_5m" id="maior_5m" value="2"> 2</td>
         </tr>
         <tr>
-            <td><label for="nenhuma3">Nenhuma</label></td>
-            <td><input type="checkbox" name="nenhuma3" id="nenhuma3" value="1"></td>
-            <td>1</td>
+            <td><label>Nenhuma</label></td>
+            <td><input type="radio" name="maior_5m" id="maior_5m" value="1"> 1</td>
         </tr>
         <tr>
             <td><div class="subtitulo3">Menores de 5 Anos</div></td>
         </tr>
         <tr>
-            <td><label for="espontanea">Espontânea</label></td>
-            <td><input type="checkbox" name="espontanea" id="espontanea" value="4"></td>
-            <td>4</td>
+            <td><label>Espontânea</label></td>
+            <td><input type="radio" name="menor_5" id="menor_5" value="4"> 4</td>
         </tr>
         <tr>
-            <td><label for="cv">Comando Verbal</label></td>
-            <td><input type="checkbox" name="cv" id="cv" value="3"></td>
-            <td>3</td>
+            <td><label>Comando Verbal</label></td>
+            <td><input type="radio" name="menor_5" id="menor_5" value="3"> 3</td>
         </tr>
         <tr>
-            <td><label for="estd">Estímulo Doloroso</label></td>
-            <td><input type="checkbox" name="estd" id="estd" value="2"></td>
-            <td>2</td>
+            <td><label>Estímulo Doloroso</label></td>
+            <td><input type="radio" name="menor_5" id="menor_5" value="2"> 2</td>
         </tr>
         <tr>
-            <td><label for="nenhuma">Nenhuma</label></td>
-            <td><input type="checkbox" name="nenhuma" id="nenhuma" value="1"></td>
-            <td>1</td>
+            <td><label>Nenhuma</label></td>
+            <td><input type="radio" name="menor_5" id="menor_5" value="1"> 1</td>
         </tr>
 
         <td></td>
 
         <tr>
-            <td><label for="pfa">Palavras e Frases Apropriadas</label></td>
-            <td><input type="checkbox" name="pfa" id="pfa" value="5"></td>
-            <td>5</td>
+            <td><label>Palavras e Frases Apropriadas</label></td>
+            <td><input type="radio" name="menor_5v" id="menor_5v" value="5"> 5</td>
         </tr>
         <tr>
-            <td><label for="pi">Palavras Inapropriadas</label></td>
-            <td><input type="checkbox" name="pi" id="pi" value="4"></td>
-            <td>4</td>
+            <td><label>Palavras Inapropriadas</label></td>
+            <td><input type="radio" name="menor_5v" id="menor_5v" value="4"> 4</td>
         </tr>
         <tr>
-            <td><label for="cp">Choro Persistente</label></td>
-            <td><input type="checkbox" name="cp" id="cp" value="3"></td>
-            <td>3</td>
+            <td><label>Choro Persistente</label></td>
+            <td><input type="radio" name="menor_5v" id="menor_5v" value="3"> 3</td>
         </tr>
         <tr>
-            <td><label for="sc">Sons Confusos</label></td>
-            <td><input type="checkbox" name="sc" id="sc" value="2"></td>
-            <td>2</td>
+            <td><label>Sons Confusos</label></td>
+            <td><input type="radio" name="menor_5v" id="menor_5v" value="2"> 2</td>
         </tr>
         <tr>
-            <td><label for="nenhuma2">Nenhuma</label></td>
-            <td><input type="checkbox" name="nenhuma2" id="nenhuma2" value="1"></td>
-            <td>1</td>
+            <td><label>Nenhuma</label></td>
+            <td><input type="radio" name="menor_5v" id="menor_5v" value="1"> 1</td>
             </tr>
             <td></td>
 
         <tr>
-            <td><label for="op">Obedece Prontamente</label></td>
-            <td><input type="checkbox" name="op" id="op" value="6"></td>
-            <td>6</td>
+            <td><label>Obedece Prontamente</label></td>
+            <td><input type="radio" name="menor_5m" id="menor_5m" value="6"> 6</td>
         </tr>
         <tr>
-            <td><label for="ld2">Localizar Dor</label></td>
-            <td><input type="checkbox" name="ld2" id="ld2" value="5"></td>
-            <td>5</td>
+            <td><label>Localizar Dor</label></td>
+            <td><input type="radio" name="menor_5m" id="menor_5m" value="5"> 5</td>
         </tr>
         <tr>
-            <td><label for="rs">Retirada do Segmento</label></td>
-            <td><input type="checkbox" name="rs" id="rs" value="4"></td>
-            <td>4</td>
+            <td><label>Retirada do Segmento</label></td>
+            <td><input type="radio" name="menor_5m" id="menor_5m" value="4"> 4</td>
         </tr>
         <tr>
-            <td><label for="fa2">Flexão Anormal</label></td>
-            <td><input type="checkbox" name="fa2" id="fa2" value="3"></td>
-            <td>3</td>
+            <td><label>Flexão Anormal</label></td>
+            <td><input type="radio" name="menor_5m" id="menor_5m" value="3"> 3</td>
         </tr>
         <tr>
-            <td><label for="ea2">Extensão Anormal</label></td>
-            <td><input type="checkbox" name="ea2" id="ea2" value="2"></td>
-            <td>2</td>
+            <td><label>Extensão Anormal</label></td>
+            <td><input type="radio" name="menor_5m" id="menor_5m" value="2"> 2</td>
         </tr>
         <tr>
-            <td><label for="nenhuma3">Nenhuma</label></td>
-            <td><input type="checkbox" name="nenhuma3" id="nenhuma3" value="1"></td>
-            <td>1</td>
+            <td><label>Nenhuma</label></td>
+            <td><input type="radio" name="menor_5m" id="menor_5m" value="1"> 1</td>
         </tr>
     </table>
 </div>
 <br>
     <div class="subtitulo3">Maiores de 5 Anos</div>
-    <div class="total2">TOTAL (GCS) (3-15):<input type="text"></div>
+    <div class="total2">TOTAL (GCS) (3-15):&nbsp;&nbsp;<input type="number"></div>
     <br>
     <div class="subtitulo3">Menores de 5 Anos</div>
-    <div class="total2">TOTAL (GCS) (3-15):<input type="text"></div>
+    <div class="total2">TOTAL (GCS) (3-15):&nbsp;&nbsp;<input type="number"></div>
     <br>
     <div class="campo4"> 
         <a class="continuar" id="continuar" name="continuar" href="sinais_vitais.html">Continuar</a>

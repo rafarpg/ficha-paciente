@@ -1,0 +1,1 @@
+<?php echo $comando = $pdo->prepare("SELECT nome FROM usuarios WHERE id=?;");$comando->execute([$alt_user]);?>

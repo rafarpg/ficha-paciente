@@ -11,7 +11,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #540B0E;
+    background-color: #1b263b;
     color: #ffff;
 }
 nav{
@@ -21,7 +21,7 @@ nav{
     flex-direction: row;
     padding: 0;
     color: #ffff;
-    background-color: #CB997E;
+    background-color: #772e25;
     justify-content: space-between;
     padding: 18px 40px;
     align-items: center;
@@ -121,8 +121,8 @@ a{
 input[type=submit] {
     width: 120px;
     height: 40px;
-    color: rgb(12, 11, 11);
-    background-color: #eeb8ba;
+    color: white;
+    background-color: #e29578;
     cursor: pointer;
     display: flex;
     justify-items: center;
@@ -130,10 +130,11 @@ input[type=submit] {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    transition: 0.3s ease;
 }
-input[type=submit]:active{
-    color: gray;
-    background-color: #000000;
+input[type=submit]:hover{
+    background: #dedede;
+    color: #ca6702;
 }
 input[type=text]:hover,
 .input:hover {
@@ -162,7 +163,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #CB997E;
+    background: #772e25;
     color: white;
     box-sizing: border-box;
     font-size: 20px;
@@ -209,7 +210,12 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    transition: 0.3s ease;
 }
+.excluir:hover{
+    background: #dedede;
+    color: #ca6702;
+  }
 .continuar {
     width: 200px;
     height: 40px;
@@ -219,6 +225,11 @@ footer {
     border-radius: 10px;
     font-size: 20px;
     text-align: center;
+    transition: 0.3s ease;
+  }
+.continuar:hover{
+    background: #dedede;
+    color: #ca6702;
   }
   .campo4{
   display: flex;

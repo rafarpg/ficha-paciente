@@ -13,7 +13,7 @@ body{
     margin: 0;
     height: 100vh;
     border: solid 1px;
-    background-color: #540B0E;
+    background-color: #1b263b;
 }
 nav{
     width: 100%;
@@ -22,7 +22,7 @@ nav{
     flex-direction: row;
     padding: 0;
     color: #ffff;
-    background-color: #CB997E;
+    background-color: #772e25;
     justify-content: space-between;
     padding: 18px 40px;
     align-items: center;
@@ -187,7 +187,7 @@ footer{
     align-items: center;
     align-self: flex-end;
     justify-self: flex-end;
-    background: #CB997E;
+    background: #772e25;
     color: white;
     box-sizing: border-box;
     font-size: 20px;

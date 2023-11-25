@@ -2,14 +2,14 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #540B0E;
+    background-color: #1b263b;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
 }
 .cabecalho{
     width: 100vw;
     height: 10vh;
-    background-color: #CB997E;
+    background-color: #772e25;
     text-align: center;
     align-content: center;
     align-items: center;
@@ -68,14 +68,12 @@ input{
     color: white;
     cursor: pointer;
     border-radius: 40px;
-
-}
-.entrar:active{
-    color: gray;
-    background-color: #000000;
+    transition: 0.3s ease;
+    font-family: "Cairo", sans-serif;
 }
 .entrar:hover{
-    text-decoration: underline;
+    background: #dedede;
+    color: #ca6702;
 }
 input[type=text] {
     background-color: #E72227;
@@ -132,11 +130,9 @@ input[type=password] {
     align-content: center;
     align-items: center;
     font-family: "Cairo", sans-serif;
+    transition: 0.3s ease;
 }
-.voltar:active {
-    color: gray;
-    background-color: #000000;
-    }
 .voltar:hover {
-    text-decoration: underline;
+    background: #dedede;
+    color: #ca6702;
     }

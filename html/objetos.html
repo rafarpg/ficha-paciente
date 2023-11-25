@@ -148,7 +148,7 @@ input[type="text2"] {
   width: 360px;
   height: 20px;
 }
-.continuar {
+.enviar {
   width: 200px;
   height: 40px;
   color: white;
@@ -159,7 +159,7 @@ input[type="text2"] {
   text-align: center;
   transition: 0.3s ease;
   }
-.continuar:hover {
+.enviar:hover {
   background: #dedede;
   color: #ca6702;
   }
@@ -172,6 +172,32 @@ input[type="text2"] {
   text-align: center;
   margin: 10px;
   }
+  table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    td{
+      color: white;
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+    input[type="number"] {
+    width: 50px;
+    height: 20px;
+}
   </style>
 </head>
 <body>
@@ -214,8 +240,89 @@ input[type="text2"] {
             <input type="text2" id="objetos" name="objetos">       
         </label>
           <br>
+          <div class="subtitulo">Materiais Utilizados Descartaveis ou Deixados no Hospital</div>
+          <br>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>MaterialUsadoNoCaso</th>
+                <th>Quant</th>
+                <th>MaterialUsadoNoCaso</th>
+                <th>Quant</th>
+                <th>MaterialUsadoNoCaso</th>
+                <th>Quant</th>
+                <th>MaterialUsadoNoCaso</th>
+                <th>Quant</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Ataduras&nbsp;&nbsp;<input type="radio" name="atadura" id="atadura" value="5"> 5&nbsp;&nbsp;<input type="radio" name="atadura" id="atadura" value="12"> 12&nbsp;&nbsp;<input type="radio" name="atadura" id="atadura" value="20"> 20</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Manta Aluminizada</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Base do Estabiliza</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;T.T.F.&nbsp;&nbsp;<input type="radio" name="ttf" id="ttf" value="adulto"> Adulto&nbsp;&nbsp;<input type="radio" name="ttf" id="ttf" value="infantil"> Infantil</td>
+                <td><input type="number" name="" id=""></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Catater TP. Ocúlos</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Pás do Dea</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Colar&nbsp;&nbsp;<input type="radio" name="colar" id="colar" value="N"> N&nbsp;&nbsp;<input type="radio" name="colar" id="colar" value="PP"> PP&nbsp;&nbsp;<input type="radio" name="colar" id="colar" value="P"> P</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Tirante Aranha</td>
+                <td><input type="number" name="" id=""></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Compressa Comum</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Sonda de Aspiração</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Colar&nbsp;&nbsp;<input type="radio" name="colar2" id="colar2" value="M"> M&nbsp;&nbsp;<input type="radio" name="colar2" id="colar2" value="G"> G&nbsp;&nbsp;<input type="radio" name="colar2" id="colar2" value="outro"> Outro</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Tirante de Cabeça</td>
+                <td><input type="number" name="" id=""></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Kit's&nbsp;&nbsp;<input type="radio" name="kit" id="kit" value="H"> H&nbsp;&nbsp;<input type="radio" name="kit" id="kit" value="P"> P&nbsp;&nbsp;<input type="radio" name="kit" id="kit" value="Q"> Q</td></td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Soro Fisiológico</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Coxins Estabiliza</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Cânula</td>
+                <td><input type="number" name="" id=""></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Luvas Desc. (Pares)</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Talas Pap.&nbsp;&nbsp;<input type="radio" name="tala" id="tala" value="P"> P&nbsp;&nbsp;<input type="radio" name="tala" id="tala" value="G"> G</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Ked&nbsp;&nbsp;<input type="radio" name="ked" id="ked" value="adulto"> Adulto&nbsp;&nbsp;<input type="radio" name="ked" id="ked" value="infantil"> Infantil</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Outro:&nbsp;&nbsp;<input type="text" name="" id=""></td>
+                <td><input type="number" name="" id=""></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Mascara Desc.</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Outro:&nbsp;&nbsp;<input type="text" name="" id=""></td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Maca Rígida</td>
+                <td><input type="number" name="" id=""></td>
+                <td><input type="checkbox" name="" id="">&nbsp;&nbsp;Outro:&nbsp;&nbsp;<input type="text" name="" id=""></td>
+                <td><input type="number" name="" id=""></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          <br>
         <div class="campo4"> 
-          <a class="continuar" id="continuar" name="continuar" href="agradecimento.html">Continuar</a>
+          <a class="enviar" id="enviar" name="enviar" href="agradecimento.html">Enviar</a>
            </div>
   <br>
   <footer>

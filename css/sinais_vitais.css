@@ -126,6 +126,7 @@ footer{
     font-size: 20px;
     font-weight: 600;
     margin-top: 85px;
+    border: solid 1px;
 }
 .carimbo_medico{
     margin-left: 80px;

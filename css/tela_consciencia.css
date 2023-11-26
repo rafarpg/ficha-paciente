@@ -168,6 +168,7 @@ footer{
     color: white;
     box-sizing: border-box;
     margin-top: 10px;
+    border: solid 1px;
 }
 .total{
     width: 100%;

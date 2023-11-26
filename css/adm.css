@@ -168,7 +168,7 @@ footer {
     box-sizing: border-box;
     font-size: 20px;
     font-weight: 600;
-    flex: 1;
+    border: solid 1px;
 }
 .campo2{
     display: flex;

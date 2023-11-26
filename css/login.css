@@ -136,3 +136,29 @@ input[type=password] {
     background: #dedede;
     color: #ca6702;
     }
+.social-list {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    }
+.social-item {
+    width: 60px;
+    height: 50px;
+    border-radius: 20px;
+    background: #dedede;
+    color: #ca6702;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    }
+.social-item:hover {
+    background-color: #E72227;
+    color: white;
+    }
+.bx{
+    font-size: 30px;
+}

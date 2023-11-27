@@ -68,7 +68,7 @@ table{
         <table border="1" class="tabela">
             <thead>
                 <tr>
-                    <th> Código </th>
+                    <th> ID </th>
                     <th> Nome </th>
                     <th> E-mail </th>
                     <th> Telefone</th>

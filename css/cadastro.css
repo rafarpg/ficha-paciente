@@ -67,11 +67,11 @@ input{
     cursor: pointer;
     transition: 0.3s ease;
 }
-a.voltar{
+.voltar{
     width: 150px;
     height: 40px;
     border-radius: 40px;
-    background-color: #E72227;
+    background-color: #cc787bad;
     text-decoration: none;
     color: white;
     display: flex;

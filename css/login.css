@@ -97,7 +97,7 @@ input[type=password] {
 .login{
     color: white;
     margin-left: 140px;
-    font-family: "Cairo", sans-serif;
+    font-family: 'Playfair Display', serif; 
 }
 .logins{
     margin-left: 100px;

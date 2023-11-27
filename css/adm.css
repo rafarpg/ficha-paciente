@@ -154,7 +154,7 @@ input[type=password]:hover,
 main{
     display: flex;
     flex-direction: column;
-    min-height: 83vh;
+    height: 80vh;
 }
 footer {
     width: 100%;

@@ -9,24 +9,64 @@
 </head>
 <style>
 .cabecalho{
-    width: 100%;
-    height: 15vh;
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin-left: 18px;
     display: flex;
-    color: white;
-    font-size: 30px;    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
     align-content: center;
-    justify-items: center;
+    text-align: center;
+    color: white;
 }
-table{
-    border: 1px solid #FFFF;
-    background-color: #540B0E 40%;
-    color: #FFFF;
-    font-size:20px;
+.cadastro {
+    background-color: #E72227;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 10px;
 }
+.cadastro:hover {
+      background: #dedede;
+      color: #ca6702;
+    }
+.sair {
+    background-color: #E72227;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 10px;
+}
+.sair:hover {
+      background: #dedede;
+      color: #ca6702;
+    }
+table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    td{
+      color: white;
+    } 
+    .container {
+      overflow-x: auto;
+    }
 </style>
 <body>
 <nav>
@@ -58,13 +98,14 @@ table{
 </div>
 
 </nav>
+    <br>
 <main>
     <div class="cabecalho">
-    Bombeiro : <?php session_start(); echo $_SESSION["nome"];?>
-    <a href="index.html" class="sair">SAIR</a>
+    <h2>Bombeiro <?php session_start(); echo $_SESSION["nome"];?></h2>&nbsp;&nbsp;
+    <button> <a href="cadastro.html" class="cadastro">CADASTRAR</a></button>&nbsp;&nbsp;<button> <a href="index.html" class="sair">SAIR</a></button>
     </div>
+    <br>
     <div class="container">
-        <a href="cadastro.html" class="botao"> CADASTRAR </a>
         <table border="1" class="tabela">
             <thead>
                 <tr>
@@ -87,8 +128,8 @@ table{
                                             <td> '.$linha['email'] .' </td>
                                             <td> '.$linha['telefone'] .' </td>
                                             <td> '.$linha['perfil'] .' </td>
-                                        	<td> <a href="excluir_usuario.php?id='.$linha['id'].'"> Excluir <a> </td>
-                                        	<td> <a href="alterar_usuario.php?id='.$linha['id'].'"> Alterar <a> </td>
+                                        	<td> <a href="excluir_usuario.php?id='.$linha['id'].'"> <h3>Excluir</h3> <a> </td>
+                                        	<td> <a href="alterar_usuario.php?id='.$linha['id'].'"> <h3>Alterar</h3> <a> </td>
                                     	</tr>
                                 	';
                             	}

@@ -130,6 +130,12 @@ table {
     <button> <a href="tela_principal.html" class="cadastro">Nova Ocorrência</a></button>
     </div>
     <br>
+    pesquisar:<select id = "pesquisa">
+ <option value="1">nome do paciente</option>
+ <option value="2">endereço</option>
+</select>
+<input size="5" type="text" id="texto">
+<button onclick="pesquisar();">ok</button>
     <div class="container">
         <table border="1" class="tabela">
             <thead>
@@ -149,6 +155,14 @@ table {
             </thead>
             <tbody>
             <?php
+            $url=0;
+            if(isset($_GET["o"]))
+            {
+            $meuselect=$_GET["o"];
+            $url=1;
+            $texto=$_GET["t"];
+            }
+           
                             include_once("listar_ocorrencias.php");
                         	if(!empty($lista_ocorrencias)){
                             	foreach($lista_ocorrencias as $linha2){
@@ -180,4 +194,12 @@ table {
       <a class="continuar" id="continuar" name="continuar" href="tela_principal.html">Voltar</a>
        </div>
 </body>
+<script>
+  function pesquisar()
+  {
+    p=pesquisa.value
+    t=texto.value
+    window.open("ocorrencias.php?o="+p+"&t="+t,"_self")
+  }
+  </script>
 </html>

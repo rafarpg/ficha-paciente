@@ -127,7 +127,7 @@ table {
 <main>
     <div class="cabecalho">
     <h2>Bombeiro: <?php session_start(); echo $_SESSION["nome"];?></h2>&nbsp;&nbsp;
-    <button> <a href="cadastro.html" class="cadastro">CADASTRAR</a></button>
+    <button> <a href="tela_principal.html" class="cadastro">Nova Ocorrência</a></button>
     </div>
     <br>
     <div class="container">
@@ -136,25 +136,35 @@ table {
                 <tr>
                     <th> ID </th>
                     <th> Nome </th>
-                    <th> E-mail </th>
-                    <th> Telefone</th>
-                    <th> Perfil </th>
-                    <th colspan="5"> Ações </th>
+                    <th> RG/CPF </th>
+                    <th> SEXO</th>
+                    <th> Hospital </th>
+                    <th> Acompanhante </th>
+                    <th> Telefone </th>
+                    <th> Idade(P) </th>
+                    <th> Idade(A) </th>
+                    <th> Local </th>
+                    <th colspan="10"> Ações </th>
                 </tr>
             </thead>
             <tbody>
             <?php
-                            include_once("listar_usuarios.php");
-                        	if(!empty($lista_usuarios)){
-                            	foreach($lista_usuarios as $linha){
+                            include_once("listar_ocorrencias.php");
+                        	if(!empty($lista_ocorrencias)){
+                            	foreach($lista_ocorrencias as $linha2){
                                 	echo ' <tr>
-                                        	<td> '.$linha['id'] .' </td>
-                                        	<td> '.$linha['nome'] .' </td>
-                                            <td> '.$linha['email'] .' </td>
-                                            <td> '.$linha['telefone'] .' </td>
-                                            <td> '.$linha['perfil'] .' </td>
-                                        	<td> <a href="excluir_usuario.php?id='.$linha['id'].'"> <h3>Excluir</h3> <a> </td>
-                                        	<td> <a href="alterar_usuario.php?id='.$linha['id'].'"> <h3>Alterar</h3> <a> </td>
+                                        	<td> '.$linha2['id_paciente'] .' </td>
+                                        	<td> '.$linha2['nome_paciente'] .' </td>
+                                            <td> '.$linha2['rg_cpf_paciente'] .' </td>
+                                            <td> '.$linha2['sexo_paciente'] .' </td>
+                                            <td> '.$linha2['nome_hospital'] .' </td>
+                                            <td> '.$linha2['nome_acompanhante'] .' </td>
+                                            <td> '.$linha2['telefone_paciente'] .' </td>
+                                            <td> '.$linha2['idade_paciente'] .' </td>
+                                            <td> '.$linha2['idade_acompanhante'] .' </td>
+                                            <td> '.$linha2['local_ocorrencia'] .' </td>
+                                        	<td> <a href="excluir_ocorrencias.php?id_paciente='.$linha2['id_paciente'].'"> <h3>Excluir</h3> <a> </td>
+                                        	<td> <a href="alterar_ocorrencia.php?id_paciente='.$linha2['id_paciente'].'"> <h3>Alterar</h3> <a> </td>
                                     	</tr>
                                 	';
                             	}
@@ -163,6 +173,7 @@ table {
 
             </tbody>
         </table>
+
     </div>
     </main>
     <div class="campo4"> 

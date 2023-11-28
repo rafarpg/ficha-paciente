@@ -21,6 +21,7 @@
     align-content: center;
     text-align: center;
     color: white;
+    margin-left: 20px;
 }
 .cadastro {
     background-color: #E72227;
@@ -36,7 +37,7 @@
       background: #dedede;
       color: #ca6702;
     }
-.sair {
+.pesquisar{
     background-color: #E72227;
     color: white;
     padding: 10px 10px;
@@ -45,10 +46,6 @@
     display: flex;
     cursor: pointer;
     font-size: 10px;
-}
-.sair:hover {
-      background: #dedede;
-      color: #ca6702;
     }
 table {
       border-collapse: collapse;
@@ -92,6 +89,35 @@ table {
   text-align: center;
   margin: 10px;
   }
+.search-container {
+  display: flex;
+  width: 235px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 65px;
+  }
+.texto {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  }
+.pesquisar{
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  }
+.pesquisar:hover{
+   text-decoration: underline;
+  }
+.pesquisa{
+  margin-left: 65px;
+  margin-top: 25px;
+}
 </style>
 <body>
 <nav>
@@ -126,23 +152,25 @@ table {
     <br>
 <main>
     <div class="cabecalho">
-    <h2>Bombeiro: <?php session_start(); echo $_SESSION["nome"];?></h2>&nbsp;&nbsp;
+    <h2>Bombeiro: <?php session_start(); echo $_SESSION["nome"];?></h2>&nbsp;&nbsp;&nbsp;&nbsp;
     <button> <a href="tela_principal.html" class="cadastro">Nova Ocorrência</a></button>
     </div>
-    <br>
-    Pesquisar:<select id = "pesquisa">
- <option value="1">Nome do paciente</option>
- <option value="2">Local da Ocorrência</option>
- <option value="3">RG/CPF</option>
- <option value="4">Nome do Hospital</option>
- <option value="5">Sexo do Paciente</option>
- <option value="6">Nome do Acompanhante</option>
- <option value="7">Telefone</option>
- <option value="8">Idade do Paciente</option>
- <option value="9">Idade do Acompanhante</option>
-</select>
-<input size="5" type="text" id="texto">
-<button onclick="pesquisar();">ok</button>
+  <select class="pesquisa" id= "pesquisa">
+    <option value="1">Nome do paciente</option>
+    <option value="2">Local da Ocorrência</option>
+    <option value="3">RG/CPF</option>
+    <option value="4">Nome do Hospital</option>
+    <option value="5">Sexo do Paciente</option>
+    <option value="6">Nome do Acompanhante</option>
+    <option value="7">Telefone</option>
+    <option value="8">Idade do Paciente</option>
+    <option value="9">Idade do Acompanhante</option>
+  </select>
+  <div class="search-container">
+        <input type="text" id="texto" placeholder="Pesquisar...">
+        <button class="pesquisar" onclick="pesquisar();">Pesquisar</button>
+    </div>
+  <br>
     <div class="container">
         <table border="1" class="tabela">
             <thead>
@@ -197,6 +225,7 @@ table {
 
     </div>
     </main>
+    <br>
     <div class="campo4"> 
       <a class="continuar" id="continuar" name="continuar" href="tela_principal.html">Voltar</a>
        </div>

@@ -6,7 +6,7 @@
 
             if($meuselect==1)
             {
-                $comando = $pdo->prepare("SELECT * FROM usuarios WHERE nome_paciente LIKE '%$texto%' ");
+                $comando = $pdo->prepare("SELECT * FROM usuarios WHERE nome LIKE '%$texto%' ");
             }
             if($meuselect==2)
             {

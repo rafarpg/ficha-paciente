@@ -130,6 +130,14 @@ table {
     <button> <a href="cadastro.html" class="cadastro">CADASTRAR</a></button>
     </div>
     <br>
+    Pesquisar:<select id = "pesquisa">
+ <option value="1">Nome</option>
+ <option value="2">E-mail</option>
+ <option value="3">Telefone</option>
+ <option value="4">Perfil</option>
+</select>
+<input size="5" type="text" id="texto">
+<button onclick="pesquisar();">ok</button>
     <div class="container">
         <table border="1" class="tabela">
             <thead>
@@ -144,6 +152,13 @@ table {
             </thead>
             <tbody>
             <?php
+                        $url=0;
+                        if(isset($_GET["o"]))
+                        {
+                        $meuselect=$_GET["o"];
+                        $url=1;
+                        $texto=$_GET["t"];
+                        }
                             include_once("listar_usuarios.php");
                         	if(!empty($lista_usuarios)){
                             	foreach($lista_usuarios as $linha){
@@ -169,4 +184,12 @@ table {
       <a class="continuar" id="continuar" name="continuar" href="tela_principal.html">Voltar</a>
        </div>
 </body>
+<script>
+  function pesquisar()
+  {
+    p=pesquisa.value
+    t=texto.value
+    window.open("usuarios.php?o="+p+"&t="+t,"_self")
+  }
+  </script>
 </html>

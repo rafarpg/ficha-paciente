@@ -130,9 +130,16 @@ table {
     <button> <a href="tela_principal.html" class="cadastro">Nova Ocorrência</a></button>
     </div>
     <br>
-    pesquisar:<select id = "pesquisa">
- <option value="1">nome do paciente</option>
- <option value="2">endereço</option>
+    Pesquisar:<select id = "pesquisa">
+ <option value="1">Nome do paciente</option>
+ <option value="2">Local da Ocorrência</option>
+ <option value="3">RG/CPF</option>
+ <option value="4">Nome do Hospital</option>
+ <option value="5">Sexo do Paciente</option>
+ <option value="6">Nome do Acompanhante</option>
+ <option value="7">Telefone</option>
+ <option value="8">Idade do Paciente</option>
+ <option value="9">Idade do Acompanhante</option>
 </select>
 <input size="5" type="text" id="texto">
 <button onclick="pesquisar();">ok</button>
